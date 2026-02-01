@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Merging Table Cells in HTML</h1>
+<table border="1" style="width: 50%">
+    <caption>Merge cells horizontally</caption>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+    </tr>
+    <tr>
+        <td>Alice</td>
+        <td>25</td>
+        <td>London</td>
+    </tr>
+    <tr>
+        <td colspan="2">Total</td>
+        <td>2 records</td>
+    </tr>
+</table>
+<hr>
+<table border="1" style="width: 50%">
+    <caption>Merge cells vertically</caption>
+    <tr>
+        <th>Name</th>
+        <th>Project</th>
+        <th>City</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Alice</td>
+        <td>Project A</td>
+        <td>London</td>
+    </tr>
+    <tr>
+        <td>Project B</td>
+        <td>Batumi</td>
+    </tr>
+</table>
+<hr>
+<table border="1" style="width: 50%">
+    <caption>Merge cells vertically and horizontally</caption>
+    <tr>
+        <th>Name</th>
+        <th>Project</th>
+        <th>City</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Ivan</td>
+        <td>Project A</td>
+        <td rowspan="2">London</td>
+    </tr>
+    <tr>
+        <td>Project B</td>
+    </tr>
+    <tr>
+        <td>Maria</td>
+        <td colspan="2">Project A (with Ivan)</td>
+    </tr>
+</table>
+</body>
+</html>
