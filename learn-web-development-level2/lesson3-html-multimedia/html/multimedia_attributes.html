@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>multimedia_attributes</title>
+</head>
+<body>
+<h1>Multimedia Attributes</h1>
+<video id="myVideo" controls width="100%" muted autoplay>
+  <source src="../assets/ManUVsArsenal.mp4" type="video/mp4">
+  <source src="../assets/ManUVsArsenal.mp4" type="video/webm">
+  <source src="../assets/ManUVsArsenal.mp4" type="video/ogg">
+
+  <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English" default>
+  <track src="subtitles_es.vtt" kind="subtitles" srclang="es" label="Spanish">
+
+  Your browser does not support the video element.
+</video>
+<button onclick="playVideo()">Play</button>
+<button onclick="pauseVideo()">Pause</button>
+<button onclick="stopVideo()">Stop</button>
+<button onclick="increaseSound()">Volume Up</button>
+<button onclick="decreaseSound()">Volume Down</button>
+<script>
+    // Controlling Multimedia Elements with JavaScript
+    const video = document.getElementById("myVideo");
+
+    function playVideo() {
+        video.play();
+    }
+
+    function pauseVideo() {
+        video.pause();
+    }
+
+    function stopVideo() {
+        video.pause();
+        video.currentTime = 0;
+    }
+    
+    function increaseSound() {
+        if (video.volume < 1.0) {
+            video.volume = Math.min(1.0, video.volume + 0.1);
+            video.dispatchEvent(new CustomEvent('increaseSound'));
+        }
+    }
+
+    function decreaseSound() {
+        if (video.volume > 0.0) {
+            video.volume = Math.max(0.0, video.volume - 0.1);
+            video.dispatchEvent(new CustomEvent('decreaseSound'));
+        }
+    }
+
+    // Multimedia Element Events
+    video.addEventListener('play', function() {
+        console.log('Video started playing');
+    });
+
+    video.addEventListener('pause', function() {
+        console.log('Video paused');
+    });
+
+    video.addEventListener('ended', function() {
+        console.log('Video ended');
+    });
+
+    video.addEventListener('timeupdate', function() {
+        console.log('Current time: ' + video.currentTime);
+    });
+
+    video.addEventListener('increaseSound', function() {
+        console.log('Increased sound');
+    });
+
+    video.addEventListener('decreaseSound', function() {
+        console.log('Decreased sound');
+    });
+</script>
+</body>
+</html>
