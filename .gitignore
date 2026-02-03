@@ -24,4 +24,6 @@ hs_err_pid*
 replay_pid*
 
 # Large files
-learn-web-development-level2/lesson3-html-multimedia/assets/ManUVsArsenal.mp4
+**/*.mp4
+**/*.mp3
+**/*.zip
