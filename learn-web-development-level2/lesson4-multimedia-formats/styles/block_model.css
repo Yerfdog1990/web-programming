@@ -1,0 +1,14 @@
+.box {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid red;
+    margin: 20px;
+}
+
+.item {
+    display: inline-block;
+    width: 100px;
+    height: 80px;
+    background: coral;
+    margin: 10px;
+}

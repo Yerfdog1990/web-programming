@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>source-track</title>
+</head>
+<body>
+<h1>Elements "source" and "track"</h1>
+<hr>
+<h2>Example 1: "source" inside a "video" Element</h2>
+<video controls muted autoplay>
+    <source src="../assets/ManUVsArsenal.mp4" type="video/mp4">
+    <source src="../assets/ManUVsArsenal.mp4" type="video/webm">
+    <source src="../assets/ManUVsArsenal.mp4" type="video/ogg">
+
+    <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+    <track src="subtitles_es.vtt" kind="subtitles" srclang="es" label="Español">
+    Your browser does not support video playback.
+</video>
+<hr>
+<h2>Example 2: "source" inside an "audio" Element</h2>
+<audio controls>
+    <source src="../assets/KenyaNationalAnthemLyrics.mp3" type="audio/mpeg">
+    <source src="../assets/KenyaNationalAnthemLyrics.mp3" type="audio/ogg">
+    Your browser does not support audio playback.
+</audio>
+<hr>
+<h2>Example 3: "source" inside a "picture" Element</h2>
+<picture>
+    <source srcset="../assets/kenya-flag.png" media="(max-width: 320px)">
+    <source srcset="../assets/kenya-flag.png" media="(max-width: 640px)">
+    <source srcset="../assets" media="(max-width: 1280px)">
+    <img src="../assets/kenya-flag.png" alt="Responsive image example">
+</picture>
+<hr>
+</body>
+</html>
+
