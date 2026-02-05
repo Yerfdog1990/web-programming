@@ -1,0 +1,43 @@
+textarea {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+img{
+    width: 10%;
+    height: 10%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+button:active {
+    background-color: blue;
+}
+
+.trail {
+    position: fixed;
+    width: 40px;
+    pointer-events: none;
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}

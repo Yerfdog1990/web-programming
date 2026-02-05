@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form_element_grouping</title>
+  <link rel="stylesheet" type="text/css" href="../styles/form_element_grouping.css">
+</head>
+<body>
+<h1>Form element grouping</h1>
+<hr>
+<form>
+  <h2>Basic Example of "fieldset"</h2>
+  <fieldset>
+    <legend>Personal Information</legend>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+  </fieldset>
+
+  <fieldset>
+    <legend>Account Details</legend>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+  </fieldset>
+
+  <input type="submit" value="Submit">
+</form>
+<hr>
+<h2>Disabled Attribute in "fieldset"</h2>
+<form>
+  <fieldset disabled>
+    <legend>Disabled Group</legend>
+
+    <label for="disabled-field">This field is disabled:</label>
+    <input type="text" id="disabled-field" name="disabled-field">
+  </fieldset>
+</form>
+<hr>
+<h2>The "legend" Element</h2>
+<form>
+  <fieldset>
+    <legend>Contact Information</legend>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone">
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address">
+  </fieldset>
+</form>
+<hr>
+<h2>Example: Registration Form with Grouping</h2>
+<form>
+  <fieldset>
+    <legend>Personal Details</legend>
+
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname">
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname">
+  </fieldset>
+
+  <fieldset>
+    <legend>Login Information</legend>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+  </fieldset>
+
+  <input type="submit" value="Register">
+</form>
+<hr>
+<h1>Real-World Examples of Form Grouping</h1>
+<h2>Settings Page (User Preferences)</h2>
+<form>
+  <fieldset>
+    <legend>Notification Settings</legend>
+
+    <label>
+      <input type="checkbox" name="emailAlerts">
+      Email notifications
+    </label>
+
+    <label>
+      <input type="checkbox" name="smsAlerts">
+      SMS notifications
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Privacy Settings</legend>
+
+    <label>
+      <input type="checkbox" name="profilePublic">
+      Make profile public
+    </label>
+  </fieldset>
+
+  <button type="submit">Save Settings</button>
+</form>
+<hr>
+<h2>Checkout Form (E-commerce)</h2>
+<form>
+  <fieldset>
+    <legend>Shipping Address</legend>
+
+    <label for="address">Address</label>
+    <input id="address" type="text">
+
+    <label for="city">City</label>
+    <input id="city" type="text">
+  </fieldset>
+
+  <fieldset>
+    <legend>Payment Information</legend>
+
+    <label for="card">Card Number</label>
+    <input id="card" type="text">
+
+    <label for="expiry">Expiry Date</label>
+    <input id="expiry" type="date">
+  </fieldset>
+
+  <button type="submit">Place Order</button>
+</form>
+<hr>
+<h2>Admin Panel (Advanced Forms)</h2>
+<form>
+  <fieldset>
+    <legend>User Information</legend>
+
+    <input type="text" placeholder="Username">
+    <input type="email" placeholder="Email">
+  </fieldset>
+
+  <fieldset disabled>
+    <legend>System Fields</legend>
+
+    <input type="text" value="User ID: 38492">
+    <input type="text" value="Role: Admin">
+  </fieldset>
+
+  <button type="submit">Update User</button>
+</form>
+<hr>
+</body>
+</html>

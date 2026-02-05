@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Input element</h1>
+<hr>
+<h2>Example: Calling a JavaScript Function</h2>
+<input type="button" value="Show Alert" onclick="showAlert()">
+<hr>
+<h2>Example: Changing an Element’s Style</h2>
+<input type="button" value="Change Color" onclick="changeColor()">
+<p id="text">This is a paragraph.</p>
+<hr>
+<h2>Example: Multiple Checkboxes</h2>
+<p>Select your interests:</p>
+<input type="checkbox" name="interest" value="sports"> Sports<br>
+<input type="checkbox" name="interest" value="music"> Music<br>
+<input type="checkbox" name="interest" value="movies"> Movies<br>
+<hr>
+<h2>Example: Pre-selected Checkbox</h2>
+<input type="checkbox" name="terms" value="agree" checked>
+I agree to the terms and conditions
+<hr>
+<h2>Example: Color Selection Radio Button</h2>
+<p>Choose a color:</p>
+
+<input type="radio" name="color" value="red"> Red<br>
+<input type="radio" name="color" value="green"> Green<br>
+<input type="radio" name="color" value="blue"> Blue<br>
+<hr>
+<h2>Example: Pre-selected Radio Button</h2>
+<input type="radio" name="subscription" value="monthly" checked> Monthly<br>
+<input type="radio" name="subscription" value="yearly"> Yearly<br>
+<hr>
+<script>
+    function showAlert() {
+        alert('This is an alert!');
+    }
+
+    function changeColor() {
+        document.getElementById('text').style.color = 'blue';
+    }
+</script>
+</body>
+</html>

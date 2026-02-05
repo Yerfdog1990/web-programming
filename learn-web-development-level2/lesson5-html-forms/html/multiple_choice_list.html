@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>multiple_choice-list</title>
+</head>
+<body>
+<h1>MultipleChoice and List</h1>
+<hr>
+<h2>The "select" Element</h2>
+<form>
+    <label for="fruits">Choose a fruit:</label>
+    <select name="fruits" id="fruits" multiple size="2">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="cherry">Cherry</option>
+        <option value="grape">Grape</option>
+        <option value="pear">Pear</option>
+        <option value="strawberry">Strawberry</option>
+        <option value="tomatoes">Tomatoes</option>
+    </select>
+</form>
+<hr>
+<h2>Pre-selects an option by default</h2>
+<form>
+    <label for="cities">Choose a city:</label>
+    <select name="cities" id="cities">
+        <option value="ny" selected>New York</option>
+        <option value="la">Los Angeles</option>
+        <option value="chicago">Chicago</option>
+        <option value="houston">Houston</option>
+    </select>
+</form>
+<hr>
+<h2>The "optgroup" Element</h2>
+<form>
+    <label for="car"></label>
+    <select name="car" id="car">
+        <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            <option value="bmw">BMW</option>
+        </optgroup>
+
+        <optgroup label="Japanese Cars">
+            <option value="toyota">Toyota</option>
+            <option value="honda">Honda</option>
+            <option value="nissan">Nissan</option>
+        </optgroup>
+    </select>
+</form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form-element</title>
+    <link rel="stylesheet" href="../styles/form_elements.css">
+</head>
+<body>
+<h1>Form element</h1>
+<hr>
+<h2>Using "input"</h2>
+<label for="username">Username:</label>
+<input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Enter username"
+        required
+>
+<hr>
+<h2>Using "textarea"</h2>
+<label for="comments">Comments:</label>
+<textarea
+        name="comments"
+        id="comments"
+        rows="5"
+        cols="40"
+        placeholder="Enter your comments here..."
+        required>
+</textarea>
+<hr>
+<h2>Using "Button"</h2>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+<button type="button" onclick="alert('Button clicked!')">Click me</button>
+<hr>
+<button type="submit">
+    <img src="../assets/kenya-flag.png" alt="Send">
+    Send
+</button>
+<script src="../scripts/form_elements.js"></script>
+</body>
+</html>
