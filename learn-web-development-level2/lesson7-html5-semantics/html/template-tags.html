@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template-tags</title>
+</head>
+<body>
+<h1>Template Tags</h1>
+<hr>
+<h2>Example 1: Adding Items to a List Using "template"</h2>
+<button id="addButton">Add Item</button>
+<ul id="itemList"></ul>
+
+<template id="itemTemplate">
+    <li class="item">This is a new item</li>
+</template>
+
+<script>
+    const addButton = document.getElementById('addButton');
+    const itemList = document.getElementById('itemList');
+    const itemTemplate = document.getElementById('itemTemplate');
+
+    addButton.addEventListener('click', () => {
+        const newItem = itemTemplate.content.cloneNode(true);
+        itemList.appendChild(newItem);
+    });
+</script>
+
+<hr>
+<h2>Example 2: Generating Product Cards with "template"</h2>
+<h1>Product List</h1>
+<div id="productList"></div>
+
+<template id="productTemplate">
+    <div class="item">
+        <h2 class="title"></h2>
+        <p class="description"></p>
+        <span class="price"></span>
+    </div>
+</template>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const products = [
+            { title: 'Product 1', description: 'Description of Product 1', price: '$100' },
+            { title: 'Product 2', description: 'Description of Product 2', price: '$200' },
+            { title: 'Product 3', description: 'Description of Product 3', price: '$300' }
+        ];
+
+        const productList = document.getElementById('productList');
+        const template = document.getElementById('productTemplate').content;
+
+        products.forEach(product => {
+            const clone = document.importNode(template, true);
+            clone.querySelector('.title').textContent = product.title;
+            clone.querySelector('.description').textContent = product.description;
+            clone.querySelector('.price').textContent = product.price;
+            productList.appendChild(clone);
+        });
+    });
+</script>
+<hr>
+<h2>Conditional Content Example Using "template"</h2>
+<h1>Operation Results</h1>
+<div id="messageContainer"></div>
+
+<template id="messageTemplate">
+    <div class="message">
+        <p class="content"></p>
+    </div>
+</template>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const messageContainer = document.getElementById('messageContainer');
+        const template = document.getElementById('messageTemplate').content;
+
+        function showMessage(type, text) {
+            const clone = document.importNode(template, true);
+            const messageDiv = clone.querySelector('.message');
+            messageDiv.classList.add(type);
+            messageDiv.querySelector('.content').textContent = text;
+            messageContainer.appendChild(clone);
+        }
+
+        showMessage('success', 'Operation completed successfully!');
+        showMessage('error', 'An error occurred during the operation.');
+    });
+</script>
+<hr>
+</body>
+</html>

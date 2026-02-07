@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Help & Feedback</title>
+</head>
+<body>
+
+<h1>Help Center</h1>
+
+<!-- FAQ Section -->
+<details>
+    <summary>What is this website about?</summary>
+    <p>This website provides learning resources and tutorials.</p>
+</details>
+
+<details>
+    <summary>How can I contact support?</summary>
+    <p>You can contact support using the feedback form.</p>
+</details>
+
+<!-- Open Dialog Button -->
+<button id="openDialog">Give Feedback</button>
+
+<!-- Feedback Dialog -->
+<dialog id="feedbackDialog">
+    <h2>Feedback Form</h2>
+    <form method="dialog">
+        <label>
+            Your Message:
+            <input type="text" id="feedbackInput">
+        </label>
+        <br><br>
+        <button id="submitFeedback">Submit</button>
+        <button>Close</button>
+    </form>
+</dialog>
+
+<!-- Display Submitted Feedback -->
+<h2>User Feedback</h2>
+<div id="feedbackList"></div>
+
+<!-- Feedback Template -->
+<template id="feedbackTemplate">
+    <p class="feedback-item"></p>
+</template>
+
+<script>
+    const dialog = document.getElementById('feedbackDialog');
+    const openDialogBtn = document.getElementById('openDialog');
+    const submitBtn = document.getElementById('submitFeedback');
+    const input = document.getElementById('feedbackInput');
+    const list = document.getElementById('feedbackList');
+    const template = document.getElementById('feedbackTemplate').content;
+
+    openDialogBtn.addEventListener('click', () => {
+        dialog.showModal();
+    });
+
+    submitBtn.addEventListener('click', () => {
+        if (input.value.trim() !== '') {
+            const clone = document.importNode(template, true);
+            clone.querySelector('.feedback-item').textContent = input.value;
+            list.appendChild(clone);
+            input.value = '';
+        }
+    });
+</script>
+</body>
+</html>

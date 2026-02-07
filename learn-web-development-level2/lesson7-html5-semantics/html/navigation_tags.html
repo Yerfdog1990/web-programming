@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>navigation-tags</title>
+</head>
+<body>
+<h1>Navigation Tags</h1>
+<hr>
+<h2>Anchor Links</h2>
+<section>
+    <h2><b>Creating Links to Anchors</b></h2>
+    <nav>
+        <ul>
+            <li><a href="#section1">Go to Section 1</a></li>
+            <li><a href="#section2">Go to Section 2</a></li>
+            <li><a href="#section3">Go to Section 3</a></li>
+        </ul>
+    </nav>
+    <h2><b><u>1. Creating Anchors with the id Attribute</u></b></h2>
+    <h2 id="section1">Section 1</h2>
+    <p>Content of section 1...</p>
+
+    <h2 id="section2">Section 2</h2>
+    <p>Content of section 2...</p>
+
+    <h2 id="section3">Section 3</h2>
+    <p>Content of section 3...</p>
+</section>
+<hr>
+<h2><b><u>2. Navigation Using the name Attribute</u></b></h2>
+<section>
+    <a name="top"></a>
+    <p>Top of the page...</p>
+
+    <a name="bottom"></a>
+    <p>Bottom of the page...</p>
+
+    <nav>
+        <ul>
+            <li><a href="#top">Go to Top</a></li>
+            <li><a href="#bottom">Go to Bottom</a></li>
+        </ul>
+    </nav>
+</section>
+<hr>
+<h2><b><u>3. Scrolling with JavaScript</u></b></h2>
+<section>
+    <button onclick="scrollToSection('section4')">Go to Section 4</button>
+    <button onclick="scrollToSection('section5')">Go to Section 5</button>
+    <button onclick="scrollToSection('section6')">Go to Section 6</button>
+
+    <h2 id="section4">Section 4</h2>
+    <p>Content of section 4...</p>
+
+    <h2 id="section5">Section 5</h2>
+    <p>Content of section 5...</p>
+
+    <h2 id="section6">Section 6</h2>
+    <p>Content of section 6...</p>
+</section>
+<hr>
+<header id="scroll">
+    <h2><b><u>4. The "nav" Tag</u></b></h2>
+    <h3>My Website</h3>
+    <p><b><u>Main menu</u></b></p>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <p><b><u>Secondary menu</u></b></p>
+    <nav>
+        <ul>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+        </ul>
+    </nav>
+    <p><b><u>Breadcrumbs</u></b></p>
+    <nav aria-label="breadcrumb">
+        <ol>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/category">Category</a></li>
+            <li>Current Page</li>
+        </ol>
+    </nav>
+</header>
+<br>
+<section>
+    <h2>The "nav" Tag</h2>
+</section>
+<script>
+    // Function to smoothly scroll to a specific section on the page
+    function scrollToSection(scroll) {
+        // Locate the element by its ID
+        document.getElementById(scroll).scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+</body>
+</html>

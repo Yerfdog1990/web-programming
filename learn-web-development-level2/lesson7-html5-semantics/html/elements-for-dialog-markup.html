@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Elements for dialog markup</h1>
+<button onclick="emailDialog.showModal()">Subscribe</button>
+
+<dialog id="emailDialog">
+  <h2>Subscribe to Newsletter</h2>
+
+  <form method="dialog" onsubmit="return validateEmail()">
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <button type="submit">Submit</button>
+    <button type="button" onclick="emailDialog.close()">Cancel</button>
+  </form>
+
+  <p id="error" style="color:red;"></p>
+</dialog>
+</body>
+<script>
+  function validateEmail() {
+    const email = document.getElementById("email").value;
+    const error = document.getElementById("error");
+
+    if (!email.includes("@")) {
+      error.textContent = "Please enter a valid email address.";
+      return false;
+    }
+
+    return true;
+  }
+</script>
+</html>
