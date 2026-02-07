@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form_events</title>
+    <style>
+        input {
+            outline: none;
+        }
+
+        .valid {
+            border: 2px solid green;
+        }
+
+        .invalid {
+            border: 2px solid red;
+        }
+
+        .wrapper-valid::after {
+            content: " Email is valid";
+            margin-left: 5px;
+            color: green;
+        }
+
+        .wrapper-invalid::after {
+            content: " Email is invalid";
+            margin-left: 5px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>HTML Events</h1>
+<h2>The submit Event</h2>
+<hr>
+<h3>Example: Prevent Submitting an Empty Field</h3>
+<form id="my-form1" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    {
+        const form = document.getElementById('my-form1');
+
+        form.addEventListener('submit', function (event) {
+            const username = document.getElementById('username').value;
+            if (username === '') {
+                alert('Please enter a username.');
+                event.preventDefault(); // prevent form submission
+            }
+        });
+    }
+</script>
+<hr>
+<h2> The reset Event</h2>
+<h3>Example: Detecting Form Reset</h3>
+<form id="my-form2">
+    <label for="name">Name:</label>
+    <br>
+    <input type="text" id="name" name="name">
+    <br><br>
+    <label for="email1">Email:</label>
+    <br>
+    <input type="email" id="email1" name="email">
+    <br><br>
+    <label for="password">Password:</label>
+    <br>
+    <input type="password" id="password" name="password">
+    <div style="margin-top: 10px">
+        <button type="reset">Reset</button>
+    </div>
+</form>
+<p id="log"></p>
+
+<script>
+    {
+        const form = document.getElementById("my-form2");
+        const log = document.getElementById("log");
+
+        form.addEventListener("reset", function () {
+            log.textContent = "Form has been reset!";
+        });
+    }
+</script>
+<hr>
+<h2>The focus and blur Events</h2>
+<fieldset>
+    <legend>Example: Showing a Hint on Focus</legend>
+    <form id="my-form3">
+        <label for="username2">Username:</label>
+        <input type="text" id="username2" name="username2">
+        <div id="username-hint" style="display: none;">
+            You'll see this hint when the field is focused.
+            It'll remain visible even after focus is shifted.
+        </div>
+    </form>
+
+    <script>
+        {
+            const usernameInput = document.getElementById('username2');
+            const hint = document.getElementById('username-hint');
+
+            usernameInput.addEventListener('focus', function () {
+                hint.style.display = 'block';
+            });
+        }
+    </script>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Example: Validation on Blur</legend>
+    <form id="my-form4">
+        <label for="username3">Username:</label>
+        <input type="text" id="username3" name="username3">
+        <div id="username-error" style="display: none; color: red;">
+            Error will show only if the field is empty after losing focus
+        </div>
+    </form>
+
+    <script>
+        {
+            const usernameInput = document.getElementById('username3');
+            const error = document.getElementById('username-error');
+
+            usernameInput.addEventListener('blur', function () {
+                error.style.display = usernameInput.value === '' ? 'block' : 'none';
+            });
+        }
+    </script>
+</fieldset>
+<hr>
+<h2>The input Event</h2>
+<h3>Example: Real-Time Email Validation</h3>
+
+<form>
+    <label for="email">Email:</label>
+    <div id="wrapper">
+        <input type="email" id="email">
+    </div>
+</form>
+
+<script>
+    {
+        const emailInput = document.getElementById('email');
+        const inputWrapper = document.getElementById('wrapper');
+
+        emailInput.addEventListener('input', function () {
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (emailPattern.test(emailInput.value)) {
+                emailInput.classList.add('valid');
+                emailInput.classList.remove('invalid');
+                inputWrapper.classList.add('wrapper-valid');
+                inputWrapper.classList.remove('wrapper-invalid');
+            } else {
+                emailInput.classList.add('invalid');
+                emailInput.classList.remove('valid');
+                inputWrapper.classList.add('wrapper-invalid');
+                inputWrapper.classList.remove('wrapper-valid');
+            }
+        });
+    }
+</script>
+<hr>
+<h2>The select Event</h2>
+<h3>Example: Handling the select event</h3>
+<form id="my-form5">
+    <label for="text">Enter text:</label>
+    <input type="text" id="text" name="text">
+    <div id="select-message"></div>
+</form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const textInput = document.getElementById('text');
+        const selectMessage = document.getElementById('select-message');
+
+        textInput.addEventListener('select', function () {
+            selectMessage.textContent = 'You selected some text!';
+        });
+    });
+</script>
+<hr>
+<h2>The change Event</h2>
+<h3>Example: Handling the change event</h3>
+<form id="my-form6">
+    <label for="color-select">Choose a color:</label>
+    <select id="color-select" name="color">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
+</form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const selectElement = document.getElementById('color-select');
+
+        selectElement.addEventListener('change', function () {
+            alert('You selected the color: ' + selectElement.value);
+        });
+    });
+</script>
+<hr>
+</body>
+</html>

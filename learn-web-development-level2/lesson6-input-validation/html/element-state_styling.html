@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>element-state-styling</title>
+    <style>
+        .focus_style:focus {
+            border-color: #4A90E2;
+            box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+            outline: none;
+        }
+
+        .hover_style:hover {
+            border-color: #50E3C2;
+            background-color: #F0F8FF;
+        }
+
+        .disabled_style:disabled {
+            background-color: #E0E0E0;
+            color: #A0A0A0;
+            cursor: not-allowed;
+        }
+
+        .checked_style:checked,
+        .radio_style:checked {
+            accent-color: green;
+        }
+    </style>
+</head>
+<body>
+<h1>Element State Styling</h1>
+<hr>
+<h2>Pseudo-class :focus</h2>
+<form>
+    <label for="name">Name:</label>
+    <input class="focus_style" type="text" id="name" name="name">
+</form>
+<hr>
+<h2>Pseudo-class :hover</h2>
+<form>
+    <label for="email">Email:</label>
+    <input class="hover_style" type="email" id="email" name="email">
+</form>
+<hr>
+<h2>Pseudo-class :disabled</h2>
+<form>
+    <label for="username">Username:</label>
+    <input class="disabled_style" type="text" id="username" name="username" disabled>
+</form>
+<hr>
+<h2>Pseudo-class :checked</h2>
+<form>
+    <label>
+        <input class="checked_style" type="checkbox" name="option" checked>
+        Option 1
+    </label>
+    <label>
+        <input class="checked_style" type="checkbox" name="option">
+        Option 2
+    </label>
+    <label>
+        <input class="radio_style" type="radio" name="choice" checked>
+        Choice 1
+    </label>
+    <label>
+        <input class="checked_style" type="radio" name="choice">
+        Choice 2
+    </label>
+</form>
+<hr>
+</body>
+</html>

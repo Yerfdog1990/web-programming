@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>file-uploads</title>
+</head>
+<body>
+<h1>File Uploads</h1>
+<hr>
+<h2>The input type="file" Element</h2>
+<form action="/upload" method="post" enctype="multipart/form-data">
+  <label for="files1">Choose files:</label>
+  <input type="file" id="files1" name="files">
+  <button type="submit">Upload</button>
+</form>
+<hr>
+<h2>The multiple Attribute</h2>
+<form action="/upload" method="post" enctype="multipart/form-data">
+  <label for="files2">Choose files:</label>
+  <input type="file" id="files2" name="files" multiple>
+  <button type="submit">Upload</button>
+</form>
+<hr>
+<h2>The accept Attribute</h2>
+<form action="/upload" method="post" enctype="multipart/form-data">
+  <label for="image">Choose an image:</label>
+  <input type="file" id="image" name="image" accept="image/*">
+  <button type="submit">Upload</button>
+</form>
+<hr>
+<h2>Restricting by File Extension</h2>
+<fieldset>
+  <legend>Example 1: Allow Only JPEG and PNG Images</legend>
+  <form action="/upload-image" method="post" enctype="multipart/form-data">
+    <label for="photo">Choose an image:</label>
+    <input
+            type="file"
+            id="photo"
+            name="photo"
+            accept=".jpg,.jpeg,.png"
+    >
+    <button type="submit">Upload</button>
+  </form>
+</fieldset>
+<br>
+<fieldset>
+  <legend>Example 2: Allow Only PDF and Word Documents</legend>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="document">Choose a document:</label>
+    <input
+            type="file"
+            id="document"
+            name="document"
+            accept=".pdf,.doc,.docx"
+    >
+    <button type="submit">Upload</button>
+  </form>
+</fieldset>
+<hr>
+<h2>Client-Side File Processing</h2>
+<h3>Example: Image Preview</h3>
+<form action="/upload" method="post" enctype="multipart/form-data">
+  <label for="image2">Choose an image:</label>
+  <input type="file" id="image2" name="image" accept="image/*">
+  <div id="preview"></div>
+  <button type="submit">Upload</button>
+</form>
+<script>
+  document.getElementById('image2').addEventListener('change', function(event) {
+    const preview = document.getElementById('preview');
+    preview.innerHTML = '';
+
+    const files = event.target.files;
+
+    for (let i = 0; i < files.length; i++) {
+      const file = files[i];
+      const reader = new FileReader();
+
+      reader.onload = function(e) {
+        const img = document.createElement('img');
+        img.src = e.target.result;
+        img.style.maxWidth = '200px';
+        preview.appendChild(img);
+      };
+
+      reader.readAsDataURL(file);
+    }
+  });
+</script>
+</body>
+</html>
