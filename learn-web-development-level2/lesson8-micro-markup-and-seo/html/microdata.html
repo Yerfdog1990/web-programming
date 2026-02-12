@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>microdata</title>
+</head>
+<body>
+<h1>Example 1: Article (JSON-LD)</h1><article>
+    <h1>Article Title</h1>
+    <p>Author: Author Name</p>
+    <p>Publication Date: January 1, 2024</p>
+    <img src="https://example.com/image.jpg" alt="Example Image">
+    <p>Article text...</p>
+</article>
+<hr>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Article Title",
+        "author": {
+            "@type": "Person",
+            "name": "Author Name"
+        },
+        "datePublished": "2024-01-01",
+        "image": "https://example.com/image.jpg",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Publisher",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://example.com/logo.png"
+            }
+        }
+    }
+</script>
+<h1>Example 2: Product (JSON-LD)</h1>
+<h1>Product Name</h1>
+<img src="https://example.com/product.jpg" alt="Product Image">
+<p>Product Description</p>
+<p>Price: $29.99</p>
+<hr>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Product Name",
+        "image": "https://example.com/product.jpg",
+        "description": "Product Description",
+        "sku": "0446310786",
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": "29.99",
+            "itemCondition": "https://schema.org/NewCondition",
+            "availability": "https://schema.org/InStock",
+            "url": "https://example.com/product"
+        }
+    }
+</script>
+<hr>
+<h1>Example: Event (Microdata Format)</h1>
+<div itemscope itemtype="https://schema.org/Event">
+
+    <h1 itemprop="name">Tech Conference 2024</h1>
+
+    <p>
+        Date:
+        <time itemprop="startDate" datetime="2024-05-01T19:00">
+            May 1, 2024, 7:00 PM
+        </time>
+    </p>
+
+    <div itemprop="location" itemscope itemtype="https://schema.org/Place">
+        <span itemprop="name">Grand Hall</span>
+
+        <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="streetAddress">123 Main Street</span>
+            <span itemprop="addressLocality">New York</span>
+            <span itemprop="postalCode">10001</span>
+            <span itemprop="addressCountry">USA</span>
+        </div>
+    </div>
+
+</div>
+hr
+</body>
+</html>

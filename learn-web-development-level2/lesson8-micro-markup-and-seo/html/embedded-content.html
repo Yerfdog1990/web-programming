@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>embedded-content</title>
+</head>
+<body>
+<h1>Embedded content</h1>
+<hr>
+<h2>The "iframe" Element</h2>
+<h3>Example</h3>
+<iframe
+        src="https://www.example.com"
+        width="600"
+        height="400"
+        title="Sample iframe">
+</iframe>
+<hr>
+<h2>1.The allowfullscreen Attribute</h2>
+<h3>Example: Embedding a YouTube Video</h3>
+<iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        allowfullscreen>
+</iframe>
+<hr>
+<h2>2.The allow Attribute</h2>
+<h3>Example</h3>
+<iframe
+        src="https://www.example.com"
+        allow="geolocation; microphone; camera; fullscreen">
+</iframe>
+<h2>3.The sandbox Attribute</h2>
+<h3>Example</h3>
+<iframe
+        src="https://www.example.com"
+        sandbox="allow-scripts allow-same-origin">
+</iframe>
+<hr>
+<h2>The loading Attribute</h2>
+<h3>Example</h3>
+<iframe
+        src="https://www.example.com"
+        width="600"
+        height="400"
+        loading="lazy">
+</iframe>
+</body>
+</html>
