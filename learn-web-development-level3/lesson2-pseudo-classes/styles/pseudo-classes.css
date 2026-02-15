@@ -1,0 +1,41 @@
+div{
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+    border-style: dashed;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+input:focus {
+    border-color: blue;
+    outline: none;
+}
+
+/* Odd items */
+li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+/* Even items */
+li:nth-child(even) {
+    background-color: lightblue;
+}
+
+/* Second item */
+li:nth-child(2) {
+    color: red;
+}
+
+.list-item:not(:last-child) {
+    border-bottom: 1px solid purple;
+}
+
+label:hover,
+label:focus {
+    background-color: darkblue;
+    color: red;
+}

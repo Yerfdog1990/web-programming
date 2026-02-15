@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pseudo-elements</title>
+  <link rel="stylesheet" href="../styles/pseudo-elements.css">
+</head>
+<body>
+<h1>Pseudo elements</h1>
+<p>Pseudo-elements in CSS allow you to style specific parts of an element, such as: </p>
+<ol>
+    <li>The first letter</li>
+    <li>The first line</li>
+    <li>Content before an element</li>
+    <li>Content after an element.</li>
+</ol>
+<p>Unlike pseudo-classes (which define states), pseudo-elements define specific parts of an element.</p>
+<div>
+  <h2>The ::before Pseudo-element</h2>
+    <p>The ::before pseudo-element inserts content before the actual content of an element.</p>
+  <ul>
+    <li class="element-before">First list item</li>
+    <li class="element-before">Second list item</li>
+    <li class="element-before">Third list item</li>
+  </ul>
+</div>
+<br>
+<div>
+    <h2>The ::after Pseudo-element</h2>
+    <p>The ::after pseudo-element inserts content after an element's content.</p>
+    <ul>
+        <li class="element-after">First list item</li>
+        <li class="element-after">Second list item</li>
+        <li class="element-after">Third list item</li>
+    </ul>
+</div>
+<br>
+<div>
+    <h2>The ::first-letter Pseudo-element</h2>
+    <p>The ::first-letter pseudo-element targets the first letter of a block-level element.</p>
+    <p class="format-first-letter">This is a paragraph example.</p>
+    <p class="format-first-letter">Here's another paragraph example.</p>
+</div>
+<br>
+<div>
+    <h2>The ::first-line Pseudo-element</h2>
+    <p>The ::first-line pseudo-element styles only the first line of text inside a block-level element.</p>
+    <p>⚠ Important: The first line depends on screen width.</p>
+    <p class="format-first-line">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p class="format-first-line">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+</div>
+</body>
+</html>

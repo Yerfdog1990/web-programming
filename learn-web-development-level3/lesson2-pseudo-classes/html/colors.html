@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>colors-in-css</title>
+    <link rel="stylesheet" href="../styles/colors.css">
+</head>
+<body>
+<h1>Accessibility Guidelines for Color Usage in CSS</h1>
+<h2>1. Ensure Sufficient Color Contrast</h2>
+<p>Low contrast between text and background makes content hard to read.</p>
+<div class="poor-contrast">
+    <h2>Example of poor contrast:</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+<br>
+<div class="good-contrast">
+    <h2>Example of good contrast:</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+<br>
+<h2>2. Never Use Color Alone to Convey Meaning</h2>
+<p>Some users cannot distinguish certain colors.</p>
+<div>
+    <h2>Example of bad color style:</h2>
+    <p class="error">❌ Error: Invalid password</p>
+    <p class="success">✔ Success: Login complete</p>
+</div>
+<br>
+<h2>3. Consider Color Blindness</h2>
+<p>Common types:</p>
+<ul>
+    <li>Red–Green color blindness (most common)</li>
+    <li>Blue–Yellow color blindness</li>
+</ul>
+<p>Avoid problematic combinations such as:</p>
+<ul>
+    <li>Red & Green</li>
+    <li>Green & Brown</li>
+    <li>Blue & Purple (low contrast)</li>
+</ul>
+<div class="contrast">
+    <h2>Better Color Pair Example:</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+<br>
+<h2>4. Use Accessible Focus Indicators</h2>
+<p>Interactive elements must clearly show focus.</p>
+<div>
+    <h2>Poor example:</h2>
+    <button class="poor-focus">Poor Example</button>
+</div>
+<br>
+<div>
+    <h2>Accessible focus Example</h2>
+    <button class="good-focus">Accessible Focus</button>
+</div>
+<br>
+<h2>5. Avoid Low Opacity Text</h2>
+<p>Low opacity reduces readability.</p>
+<div class="poor-opacity">
+    <h2>Poor opacity:</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+<br>
+<div class="good-opacity">
+    <h2>Better opacity</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+<br>
+<h2>6. Use Gradients Carefully</h2>
+<p>Gradients may reduce text readability.</p>
+<div class="poor-gradient">
+    <h2>Example of poor gradient:</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+<br>
+<div class="good-gradient">
+    <h2>Example of good gradient:</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+<br>
+</body>
+</html>

@@ -1,0 +1,58 @@
+
+div{
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+    border-style: dashed;
+}
+
+.poor-contrast{
+    color: lightgray;
+    background-color: white;
+}
+
+.green {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+.contrast {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+.poor-focus:focus {
+    outline: none;
+}
+
+.good-focus:hover {
+    background-color: #004c99;
+}
+.good-focus:focus {
+    outline: 3px solid #ff9900;
+}
+
+.poor-outline:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.good-opacity{
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.poor-gradient{
+    background: linear-gradient(lightblue, white);
+    color: yellow;
+}
+
+.good-gradient{
+    background: linear-gradient(#003366, #0066cc);
+    color: white;
+}

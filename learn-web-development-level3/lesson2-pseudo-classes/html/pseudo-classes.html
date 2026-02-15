@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pseudo-classes</title>
+    <link rel="stylesheet" href="../styles/pseudo-classes.css">
+</head>
+<body>
+<h1>Pseudo classes in CSS</h1>
+<p><b>Pseudo-classes </b>in CSS are special keywords added to selectors to define the state of an element or its position in the document structure.</p>
+<p>They allow you to style elements dynamically — without adding extra classes or JavaScript.</p>
+<div>
+    <h2>1.The :hover Pseudo-class</h2>
+    <p>The <b>:hover pseudo-class</b> is applied when a user moves the mouse pointer over an element.</p>
+    <a href="#">Placeholder Link</a>
+</div>
+<br>
+<div>
+    <h2>2.The :focus Pseudo-class</h2>
+    <p>The <b>:focus pseudo-class</b>  applies when an element receives focus.</p>
+    <label for="text">Name:</label>
+    <input type="text" name="text" id="text">
+</div>
+<br>
+<div>
+    <h2>3.The :nth-child() Pseudo-class</h2>
+    <p>The <b>:nth-child() pseudo-class</b> selects elements based on their position among siblings.</p>
+    <ul>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+        <li>Element 5</li>
+        <li>Element 6</li>
+        <li>Element 7</li>
+    </ul>
+</div>
+<br>
+<div>
+    <h2>4.The :not() Pseudo-class</h2>
+    <p>The <b>:not() pseudo-class</b> excludes elements from selection.</p>
+    <ul>
+        <li class="list-item">Element 1</li>
+        <li class="list-item">Element 2</li>
+        <li class="list-item">Element 3</li>
+        <li class="list-item">Element 4</li>
+        <li class="list-item">Element 5</li>
+    </ul>
+</div>
+<br>
+<div>
+    <h2>Combining Pseudo-classes</h2>
+    <label for="name" class="label">Name:</label>
+    <input type="text" name="name" placeholder="Name" id="name">
+    <label for="email" class="label">Email:</label>
+    <input type="email" name="email" placeholder="Email" id="email">
+</div>
+</body>
+</html>
