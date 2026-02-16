@@ -1,0 +1,52 @@
+div{
+    width: 50%;
+    border-style: dashed;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+/*Letter height*/
+.normal-height {
+    line-height: normal;
+}
+
+.numeric {
+    line-height: 2;
+}
+
+.percentage {
+    line-height: 300%;
+}
+
+.absolute {
+    line-height: 60px;
+}
+
+/*Letter spacing */
+.normal-letter-spacing {
+    letter-spacing: normal;
+}
+
+.wide-letter-spacing {
+    letter-spacing: 5px;
+}
+
+.narrow-letter-spacing {
+    letter-spacing: -1px;
+}
+
+.negative-letter-spacing {
+    letter-spacing: -3px;
+}
+
+.normal-word-spacing {
+    word-spacing: normal;
+}
+
+.wide-word-spacing {
+    word-spacing: 10px;
+}
+
+.narrow-word-spacing {
+    word-spacing: -3px;
+}

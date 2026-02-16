@@ -1,0 +1,62 @@
+div{
+    width: 50%;
+    border-style: dashed;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+/*1. Color Names*/
+.name {
+    color: green;
+}
+/*2. Hexadecimal (Hex) Values*/
+.hexadecimal {
+    color: #ffa500;
+}
+/*3. RGB and RGBA*/
+.rgb {
+    color: rgb(255, 99, 199);
+    color: rgba(106, 90, 205); /* Transparent red */
+}
+/*4. HSL and HSLA*/
+.hsl {
+    color: hsl(0, 100%, 50%);
+    color: hsla(0, 100%, 50%, 0.5); /* Transparent red */
+}
+
+/*Common Units for font-size*/
+/*1. Pixels (px)*/
+.pixel {
+    font-size: 16px;
+}
+/*2. Relative Units*/
+/* Percentage (%)*/
+.percentage {
+    font-size: 150%;
+}
+
+.emphasis {
+    font-size: 1.5em;
+}
+/*Relative to the parent element’s font size.*/
+/*rem*/
+.rem {
+    font-size: 1.5rem;
+}
+/*Relative to the <html> element’s font size.*/
+/*3. Viewport Units*/
+ .viewport {
+     font-size: 3vw; /* 2% of viewport width */
+     font-size: 3vh; /* 2% of viewport height */
+ }
+
+/*Keyword Values*/
+.keyword-values {
+    font-weight: bold;
+}
+
+/*Numeric Values*/
+.numeric-values {
+    font-weight: 300; /* Light */
+    font-weight: 700; /* Bold */
+}

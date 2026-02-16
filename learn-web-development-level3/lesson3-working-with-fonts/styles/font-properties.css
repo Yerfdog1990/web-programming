@@ -1,0 +1,38 @@
+div{
+    width: 50%;
+    border-style: dashed;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.normal-style {
+    font-style: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.normal-variant {
+    font-variant: normal;
+}
+
+.small-caps {
+    font-variant: small-caps;
+}
+
+.normal-stretched {
+    font-stretch: normal;
+}
+
+.condensed {
+    font-stretch: condensed;
+}
+
+.expanded {
+    font-stretch: expanded;
+}

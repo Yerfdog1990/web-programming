@@ -1,0 +1,22 @@
+div{
+    width: 50%;
+    border-style: dashed;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.font-family{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.serif-family{
+    font-family: "Times New Roman", serif;
+}
+
+.sans-serif{
+    font-family: "Arial", sans-serif;
+}
+
+.monospace{
+    font-family: "Courier New", monospace;
+}

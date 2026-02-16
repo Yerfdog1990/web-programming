@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Playwrite+NZ+Basic+Guides&display=swap');
+
+div{
+    width: 50%;
+    border-style: dashed;
+    border-radius: 2px;
+    padding: 10px;
+}
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url("./fonts/Poppins/Poppins-ThinItalic.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.custom-font {
+    font-family: 'MyCustomFont', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #333;
+}
+
+.google-font {
+    font-family: Playwrite NZ Basic Guides, sans-serif;
+}
+
+.import-font{
+    font-family: Playwrite AT, sans-serif;
+}
