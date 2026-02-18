@@ -1,0 +1,44 @@
+div{
+    width: 50%;
+    border-style: dashed;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.indent-20px {
+    text-indent: 20px;
+}
+
+.indent-5percent {
+    text-indent: 5%;
+}
+
+.indent-negative {
+    text-indent: -20px;
+}
+
+.justify-left {
+    text-align: justify;
+    text-align-last: left;
+}
+
+.justify-right {
+    text-align: justify;
+    text-align-last: right;
+}
+
+.justify-center {
+    text-align: justify;
+    text-align-last: center;
+}
+
+.justify-justify {
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.styled-paragraph {
+    text-indent: 30px;
+    text-align: justify;
+    text-align-last: right;
+}

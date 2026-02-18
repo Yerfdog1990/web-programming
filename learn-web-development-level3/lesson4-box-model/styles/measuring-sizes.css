@@ -1,0 +1,51 @@
+div{
+    border: 1px solid red;
+    width: 50%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.box {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.auto-width{
+    width: auto;
+}
+.box-fixed {
+    width: 200px;
+}
+
+.box-percentage {
+    width: 50%;
+}
+
+.box-fixed-height {
+    height: 150px;
+    width: auto;
+    background-color: #2ecc71;
+}
+
+.box-percentage-height {
+    height: 50%;
+    width: auto;
+    background-color: #7a5c71;
+}
+
+.auto-height{
+    height: auto;
+    width: auto;
+}
+
+.box-max-width {
+    width: 100%;
+    max-width: 300px;
+}
+.box-max-height {
+    max-height: 35px;
+    overflow: auto;
+    width: auto;
+}

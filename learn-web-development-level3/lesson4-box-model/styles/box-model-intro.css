@@ -1,0 +1,6 @@
+.element {
+    width: 500px;           /* Content width */
+    padding: 10px;          /* Space inside */
+    border: 2px solid red;  /* Border */
+    margin: 20px;           /* Space outside */
+}

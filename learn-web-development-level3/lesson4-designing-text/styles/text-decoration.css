@@ -1,0 +1,44 @@
+div{
+    width: 50%;
+    border-style: dashed;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/*The text-decoration Property*/
+.underline {
+    text-decoration: underline;
+}
+.overline {
+    text-decoration: overline;
+}
+.line-through {
+    text-decoration: line-through;
+}
+.custom-decoration {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+}
+
+/*The text-transform Property*/
+.capitalize {
+    text-transform: capitalize;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+
+/*The text-shadow Property*/
+.text-shadow {
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.multiple-shadows {
+    text-shadow:
+            2px 2px 4px rgba(0, 0, 0, 0.5),
+            -2px -2px 4px rgba(255, 255, 255, 0.5);
+}

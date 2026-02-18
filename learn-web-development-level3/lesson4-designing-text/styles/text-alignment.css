@@ -1,0 +1,65 @@
+div{
+    width: 50%;
+    border-style: dashed;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/*text-align*/
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+/*vertical-align*/
+.container {
+    height: 100px;
+    border: 1px solid black;
+}
+
+.baseline {
+    vertical-align: baseline;
+}
+
+.sub {
+    vertical-align: sub;
+}
+
+.super {
+    vertical-align: super;
+}
+
+.text-top {
+    vertical-align: text-top;
+}
+
+.text-bottom {
+    vertical-align: text-bottom;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.bottom {
+    vertical-align: bottom;
+}
+
+.percent-50 {
+    vertical-align: 50%;
+}

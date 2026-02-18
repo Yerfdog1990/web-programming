@@ -1,0 +1,47 @@
+div{
+    border: 1px solid red;
+    width: 600px;
+    border-radius: 5px;
+}
+
+#collapse{
+    width: 600px;
+    border-radius: 5px;
+    border-style: dashed;
+}
+.padding {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+
+.margin {
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    margin-left: 60px;
+}
+
+.negative-margin {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border: 2px solid #000;
+    margin-top: -12px;
+}
+
+.box1 {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border: 2px solid #000;
+    margin-bottom: 30px;
+    width: 500px;
+}
+
+.box2 {
+    background-color: #d0d0d0;
+    padding: 20px;
+    border: 2px solid #000;
+    margin-top: 20px;
+    width: 500px;
+}

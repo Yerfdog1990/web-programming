@@ -1,0 +1,49 @@
+div{
+    width: 50%;
+    border-style: dashed;
+    border-radius: 5px;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.clip {
+    text-overflow: clip;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+}
+
+/*The white-space Property*/
+.normal {
+    white-space: normal;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.pre {
+    white-space: pre;
+}
+
+.pre-wrap {
+    white-space: pre-wrap;
+}
+
+.pre-line {
+    white-space: pre-line;
+}
+
+.break-spaces {
+    white-space: break-spaces;
+}
+
+.normal-overflow-wrap {
+    overflow-wrap: normal;
+}
+
+.break-word {
+    overflow-wrap: break-word;
+}
