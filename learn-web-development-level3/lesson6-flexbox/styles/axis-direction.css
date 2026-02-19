@@ -1,0 +1,82 @@
+.container {
+    border-radius: 5px;
+    border-style: dashed;
+    border-color: red;
+    padding: 10px;
+}
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    padding: 10px;
+}
+
+.container-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    border: 2px solid #000;
+    padding: 10px;
+}
+
+.container-row {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #000;
+    padding: 10px;
+}
+
+.container-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 2px solid #000;
+    padding: 10px;
+}
+
+.item {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+.container-nowrap,
+.container-wrap,
+.container-wrap-reverse {
+    border: 2px solid #000;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.container-nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+    background: #fce4ec;
+}
+.container-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    background: #e0f7fa;
+}
+.container-wrap-reverse {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    background: #f1f8e9;
+}
+
+.item {
+    width: 100px;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+.flex-flow {
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    padding: 10px;
+    width: 300px;
+}

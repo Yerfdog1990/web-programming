@@ -1,0 +1,61 @@
+.container {
+    border-radius: 5px;
+    border-style: dashed;
+    border-color: red;
+    padding: 10px;
+}
+
+
+.item {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+.around{
+    display: flex;
+    justify-content: space-around;
+}
+
+.start{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.nav-item {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    background-color: #575757;
+}

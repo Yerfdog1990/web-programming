@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cross-axis-alignment</title>
+    <link rel="stylesheet" href="../styles/cross-axis-alignment.css">
+</head>
+<body>
+<h1>Cross Axis Alignment in Flexbox</h1>
+<h2>1. The align-items Property</h2>
+<div class="container">
+    <div class="align-self">
+        <h3>Example: Overriding Alignment</h3>
+        <div class="item self-flex-end">Item 1</div>
+        <div class="item self-center">Item 2</div>
+        <div class="item self-baseline">Item 3</div>
+    </div>
+</div>
+<br>
+<h2>2. Stretching Items</h2>
+<div class="container">
+    <h3>align-items: stretch;</h3>
+    <div class="container-stretch align-stretch">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <h3>align-items: flex-start;</h3>
+    <div class="container-stretch align-flex-start">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</div>
+<br>
+<h2>3. Centering Items Horizontally and Vertically</h2>
+<div class="container">
+    <h3>Example: Perfect Centering</h3>
+    <div class="center-container">
+        <div class="center-item">Centered item</div>
+    </div>
+</div>
+</body>
+</html>
