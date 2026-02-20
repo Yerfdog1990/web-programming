@@ -1,0 +1,72 @@
+.container{
+    border-style: dashed;
+    border-color: red;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.multi-bg {
+    width: 760px;
+    height: 300px;
+    background-image: url('../assets/thumbs-up-emoji-happy.png'),
+    url('../assets/kenyan-flag.png');
+    background-position: center, top left;
+    background-repeat: no-repeat, no-repeat;
+    border: 1px solid #000;
+}
+
+.multi-bg-sizes {
+    width: 760px;
+    height: 300px;
+    background-image: url('../assets/thumbs-up-emoji-happy.png'),
+    url('../assets/kenyan-flag.png');
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 60% 60%, 40% 40%;
+    border: 1px solid #000;
+}
+
+.multi-bg-opacity {
+    width: 720px;
+    height: 300px;
+    border: 1px solid #000;
+    position: relative;
+    padding: 20px;
+}
+
+.multi-bg-opacity::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../assets/thumbs-up-emoji-happy.png'),
+    url('../assets/kenyan-flag.png');
+    background-position: top left, top right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+
+    opacity: 0.1;
+}
+
+.multi-bg-origin-clip {
+    width: 600px;
+    height: 300px;
+
+    background-image: url('../assets/thumbs-up-emoji-happy.png'),
+    url('../assets/kenyan-flag.png');
+    background-position: -85px 0, 430px bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 256px, 256px;
+
+    background-origin: padding-box, content-box;
+    background-clip: border-box, padding-box;
+
+    border: 15px solid black;
+    padding: 30px;
+    margin: 20px;
+}

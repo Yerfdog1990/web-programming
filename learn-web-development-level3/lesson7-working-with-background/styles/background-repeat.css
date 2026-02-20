@@ -1,0 +1,92 @@
+.container{
+    border-style: dashed;
+    border-color: red;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.repeat {
+    width: 200px;
+    height: 200px;
+    background-image: url('../assets/thumbs-up-emoji-happy.png');
+    background-repeat: repeat;
+    background-size: 40px 40px;
+    border: 1px solid #000;
+}
+
+.repeat-x {
+    width: 200px;
+    height: 200px;
+    background-image: url('../assets/thumbs-up-emoji-happy.png');
+    background-repeat: repeat-x;
+    background-size: 40px 40px;
+    border: 1px solid #000;
+}
+
+.repeat-y {
+    width: 200px;
+    height: 200px;
+    background-image: url('../assets/thumbs-up-emoji-happy.png');
+    background-repeat: repeat-y;
+    background-size: 40px 40px;
+    border: 1px solid #000;
+}
+
+.no-repeat {
+    width: 200px;
+    height: 200px;
+    background-image: url('../assets/thumbs-up-emoji-happy.png');
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    border: 1px solid #000;
+}
+
+.size-auto {
+    width: 200px;
+    height: 200px;
+    background-image: url('../assets/thumbs-up-emoji-happy.png'); /* original image size - 40px x 40px */
+    background-size: auto;
+    border: 1px solid #000;
+}
+
+.size-cover {
+    width: 300px;
+    height: 200px;
+    background-image: url('../assets/thumbs-up-emoji-happy.png'); /* original image size - 40px x 40px */
+    background-size: cover;
+    border: 1px solid #000;
+}
+
+.size-contain {
+    width: 300px;
+    height: 200px;
+    background-image: url('../assets/thumbs-up-emoji-happy.png'); /* original image size - 40px x 40px */
+    background-size: contain;
+    border: 1px solid #000;
+}
+
+.size-pixels {
+    width: 200px;
+    height: 200px;
+    background-image: url('../assets/thumbs-up-emoji-happy.png');
+    background-size: 100px 50px;
+    border: 1px solid #000;
+}
+
+.size-percent {
+    width: 200px;
+    height: 200px;
+    background-image: url('../assets/thumbs-up-emoji-happy.png');
+    background-size: 50% 50%;
+    border: 1px solid #000;
+}
+
+.combined {
+    width: 200px;
+    height: 200px;
+    background-image: url('../assets/thumbs-up-emoji-happy.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #000;
+}

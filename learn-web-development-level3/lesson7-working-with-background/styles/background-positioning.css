@@ -1,0 +1,69 @@
+.container{
+    border-style: dashed;
+    border-color: red;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.left-top-name {
+    background-image: url('../assets/kenyan-flag.png');
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+    background-position: left top;  /* Image is positioned in the top left corner */
+}
+
+.center-center-name {
+    background-image: url('../assets/kenyan-flag.png');
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+    background-position: center center;  /* Image is centered */
+}
+.right-bottom-name {
+    background-image: url('../assets/kenyan-flag.png');
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+    background-position: right bottom;  /* Image is positioned in the bottom right corner */
+}
+
+.center-center-percentage {
+    background-image: url('../assets/kenyan-flag.png');
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+    background-position: 50% 50%;  /* Image is centered */
+}
+
+.top-left-percentage {
+    background-image: url('../assets/kenyan-flag.png');
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+    background-position: 0% 0%;  /* Image is positioned in the top left corner */
+}
+
+.bottom-right-percentage {
+    background-image: url('../assets/kenyan-flag.png');
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+    background-position: 100% 100%;  /* Image is positioned in the bottom right corner */
+}
+
+.pixels-unit {
+    background-image: url('../assets/kenyan-flag.png');
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+    background-position: 10px 20px;/* Image is positioned 10 pixels to the right and 20 pixels down from the top left corner */
+}
+
+.em-unit {
+    background-image: url('../assets/kenyan-flag.png');
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+    background-position: 2em 3em;/* Image is positioned 2em to the right and 3em down */
+}
+
+.combine-unit {
+    background-image: url('../assets/kenyan-flag.png');
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+    background-position: left 20px top 10px;/* Image is positioned 20 pixels to the right and 10 pixels down from the top left corner */
+}

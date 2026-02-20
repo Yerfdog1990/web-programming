@@ -1,0 +1,54 @@
+.container{
+    border-style: dashed;
+    border-color: red;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.color-red {
+    background-color: red;
+}
+
+.color-hex {
+    background-color: #3498db;
+}
+
+.color-rgba {
+    background-color: rgba(46, 204, 113, 0.7);
+}
+
+.background-url {
+    background-image: url('../assets/kenyan-flag.png');
+    background-repeat: no-repeat;
+    background-size: 610px 290px;
+    background-position: center;
+    border: 2px solid #000;
+    width: 760px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.combined-background {
+    background-color: lightblue;
+    background-image: url('../assets/kenyan-flag.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 610px 290px;
+    border: 2px solid #000;
+    width: 760px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;"
+font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
