@@ -1,0 +1,117 @@
+.container {
+    width: 50%;
+    border-style: dashed;
+    border-color: red;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+div {
+    border: 2px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.border-thin {
+    border: thin solid black;
+    margin: 10px;
+}
+
+.border-medium {
+    border: medium solid black;
+    margin: 10px;
+}
+
+.border-thick {
+    border: thick solid black;
+    margin: 10px;
+}
+
+.border-custom {
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    margin: 10px;
+}
+
+.border-none {
+    border: 3px none blue;
+}
+
+.border-solid {
+    border: 3px solid blue;
+}
+
+.border-dotted {
+    border: 3px dotted blue;
+}
+
+.border-dashed {
+    border: 3px dashed blue;
+}
+
+.border-double {
+    border: 3px double blue;
+}
+
+.border-groove {
+    border: 3px groove blue;
+}
+
+.border-ridge {
+    border: 3px ridge blue;
+}
+
+.border-inset {
+    border: 3px inset blue;
+}
+
+.border-outset {
+    border: 3px outset blue;
+}
+
+.border-red {
+    border-color: red;
+}
+
+.border-blue {
+    border-color: blue;
+}
+
+.border-green {
+    border-color: green;
+}
+
+.border-rgba {
+    border-color: rgba(255, 0, 0, 0.5);
+}
+
+.radius-all {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.radius-top {
+    border: 2px solid red;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.radius-bottom {
+    border: 2px solid blue;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.radius-mixed {
+    border: 2px solid green;
+    border-radius: 10px 20px 30px 40px;
+    padding: 10px;
+    margin: 10px;
+}

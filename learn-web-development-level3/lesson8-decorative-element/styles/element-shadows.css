@@ -1,0 +1,64 @@
+.container {
+    width: 50%;
+    border-style: dashed;
+    border-color: red;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.shadow-basic {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow-blur {
+    width: 200px;
+    height: 200px;
+    background-color: #2ecc71;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow-spread {
+    width: 200px;
+    height: 200px;
+    background-color: #e74c3c;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow-inset {
+    width: 200px;
+    height: 200px;
+    background-color: #f1c40f;
+    box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.multiple-shadows {
+    width: 200px;
+    height: 200px;
+    background-color: #bdc3c7;
+    box-shadow:
+            5px 5px 10px rgba(0, 0, 0, 0.5),
+            -5px -5px 15px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

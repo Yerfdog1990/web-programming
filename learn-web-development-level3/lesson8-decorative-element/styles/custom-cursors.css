@@ -1,0 +1,75 @@
+.container {
+    width: 50%;
+    border-style: dashed;
+    border-color: red;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.default-cursor {
+    cursor: default;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.pointer-cursor {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.text-cursor {
+    cursor: text;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* New Cursor Types */
+
+.move-cursor {
+    cursor: move;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.wait-cursor {
+    cursor: wait;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.help-cursor {
+    cursor: help;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.crosshair-cursor {
+    cursor: crosshair;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.not-allowed-cursor {
+    cursor: not-allowed;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.grab-cursor {
+    cursor: grab;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.grabbing-cursor {
+    cursor: grabbing;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.custom-cursor {
+    cursor: url('../assets/laughter-icon.png'), auto;
+    padding: 10px;
+    border: 1px solid black;
+}
