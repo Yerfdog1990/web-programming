@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stacking-context</title>
+  <link rel="stylesheet" href="../styles/stacking-context.css">
+</head>
+<body>
+<h1>Stacking Context</h1>
+<h2>1. Stacking Rules</h2>
+<div class="container">
+  <h3>Example: Basic z-index Usage</h3>
+  <div  class="wrapper1">
+    <div class="box box1a">Box 1 (z-index: 1) → appears in the middle</div>
+    <div class="box box2a">Box 2 (z-index: 2) → appears on top</div>
+    <div class="box box3a">Box 3 (z-index: 0) → appears at the bottom</div>
+  </div>
+</div>
+<h2>2. Interaction of Stacking Contexts</h2>
+<h3>Example: Two Stacking Contexts</h3>
+<div class="container">
+  <div class="wrapper2">
+    <div class="container1">
+      <div class="box box1b">Box 1</div>
+      <div class="box box2b">Box 2</div>
+    </div>
+
+    <div class="container2">
+      <div class="box box1b">Box 3</div>
+      <div class="box box2b">Box 4</div>
+    </div>
+  </div>
+</div>
+<h2>3. Negative z-index Values</h2>
+<div class="container" id="negative-z-index">
+  <div class="box box1c">-1</div>
+  <div class="box box2c">0</div>
+</div>
+</body>
+</html>

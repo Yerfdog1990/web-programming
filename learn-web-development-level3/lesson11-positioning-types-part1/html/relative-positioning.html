@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>relative-positioning</title>
+    <link rel="stylesheet" href="../styles/relative-positioning.css">
+</head>
+<body>
+<h1>Relative Positioning</h1>
+<h2>1. The top Property</h2>
+<div class="container">
+    <div class="box static-box">This is a standard block</div>
+    <div class="box relative-top">This block will be shifted down by 20px.</div>
+    <div class="box static-box">This is a standard block</div>
+</div>
+<h2>2. The right Property</h2>
+<div class="container">
+    <div class="box static-box">This is a standard block</div>
+    <div class="box relative-right">This block will be shifted left by 20px.</div>
+    <div class="box static-box">This is a standard block</div>
+</div>
+<h2>3. The bottom Property</h2>
+<div class="container">
+    <div class="box static-box">This is a standard block</div>
+    <div class="box relative-bottom">This block will be shifted up by 20px.</div>
+    <div class="box static-box">This is a standard block</div>
+</div>
+<h2>4. The left Property</h2>
+<div class="container">
+    <div class="box static-box">This is a standard block</div>
+    <div class="box relative-left">This block will be shifted right by 20px.</div>
+    <div class="box static-box">This is a standard block</div>
+</div>
+<h2>5. Interaction with Adjacent Elements</h2>
+<div class="container" id="container">
+    <div class="relative-box box1">Element 1 (shifted down)</div>
+    <div class="relative-box box2">Element 2 (shifted right)</div>
+    <div class="relative-box">Element 3 (normal position)</div>
+</div>
+</body>
+</html>
