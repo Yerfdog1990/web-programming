@@ -1,0 +1,96 @@
+.container {
+  padding: 10px;
+  border-style: solid;
+  width: 50%;
+  border-color: red;
+}
+
+.horizontal-centered-box {
+  padding: 10px;
+  background-color: #3498db;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+.margin-center {
+  background-color: greenyellow;
+  padding: 20px;
+}
+.text-align-center {
+  text-align: center;
+  background-color: #f1c40f;
+  padding: 20px;
+}
+
+.horizontal-inline-element {
+  background-color: #e74c3c;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+}
+
+.horizontal-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2ecc71;
+  padding: 10px;
+  height: 80px;
+}
+
+.vertical-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: purple;
+  height: 80px;
+}
+
+.vertical-centered-box {
+  padding: 10px;
+  background-color: #3498db;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  place-items: center;
+  height: 80px;
+  background-color: brown;
+}
+
+.absolute-container {
+  position: relative;
+  height: 80px;
+  background-color: yellow;
+}
+
+.absolute-centered-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: #3498db;
+}
+
+.table-container {
+  display: table;
+  width: 100%;
+  height: 80px;
+  background-color: #f39c12;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table-centered-box {
+  display: inline-block;
+  background-color: #3498db;
+  padding: 10px;
+  color: white;
+}

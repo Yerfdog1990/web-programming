@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>floating-element</title>
+  <link rel="stylesheet" href="../styles/floating-element.css">
+</head>
+<body>
+<h1>Floating Elements</h1>
+<h2>1. The float Property</h2>
+<div class="container" style="height: 200px;">
+  <div class="float-left1">Left Float</div>
+  <div class="float-right1">Right Float</div>
+
+  <div class="content">
+    <p>
+      This is some content that will wrap around the floated elements.
+      The left floated element will be placed to the left, and the right
+      floated element will be placed to the right.
+    </p>
+  </div>
+</div>
+<h2>2. The clear Property</h2>
+<div class="container">
+  <div class="float-left2">Left Float</div>
+  <div class="float-right2">Right Float</div>
+
+  <div class="clear">Cleared Element</div>
+
+  <div class="content">
+    <p>
+      This content will not wrap around the floated elements
+      because of the cleared element above.
+    </p>
+  </div>
+</div>
+<h2>3. The "Clearfix" Technique</h2>
+<div class="container">
+  <div class="clearfix">
+    <div class="sidebar">Sidebar Content</div>
+    <div class="main">Main Content</div>
+  </div>
+</div>
+<h2>4. Example: Two-Column Layout Using float and clear</h2>
+<div class="container">
+  <div class="sidebar">Sidebar Content</div>
+  <div class="main">Main Content</div>
+  <div class="footer">Footer Content</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+.container {
+  padding: 10px;
+  border-style: solid;
+  width: 50%;
+  border-color: red;
+  height: auto;
+}
+
+.content {
+  background-color: lightgrey;
+  padding: 10px;
+}
+
+.float-left1 {
+  float: left;
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+}
+
+.float-right1 {
+  float: right;
+  width: 200px;
+  height: 200px;
+  background-color: lightgreen;
+}
+
+.float-left2 {
+  float: left;
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+}
+
+.float-right2 {
+  float: right;
+  width: 200px;
+  height: 200px;
+  background-color: lightgreen;
+}
+
+.clear {
+  clear: both;
+  background-color: lightcoral;
+  padding: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sidebar {
+  float: left;
+  width: 25%;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.main {
+  float: left;
+  width: 75%;
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+.footer {
+  clear: both;
+  background-color: lightcoral;
+  padding: 10px;
+  text-align: center;
+}

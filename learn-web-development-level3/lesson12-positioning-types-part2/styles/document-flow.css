@@ -1,0 +1,44 @@
+.container {
+  padding: 10px;
+  border-style: solid;
+  width: 50%;
+  border-color: red;
+  height: auto;
+}
+
+.block {
+  background-color: lightblue;
+  margin: 10px;
+  padding: 10px;
+}
+
+.inline {
+  background-color: lightcoral;
+  margin: 5px;
+  padding: 5px;
+}
+
+.wrapper {
+  height: 200px;
+  overflow: auto;
+}
+
+.fixed {
+  position: fixed;
+  top: 500px;
+  right: 760px;
+  background-color: lightcoral;
+  padding: 10px;
+}
+
+.content {
+  background: linear-gradient(white, lightgray);
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: lightgreen;
+  padding: 10px;
+}
+
