@@ -1,0 +1,21 @@
+.container {
+    padding: 10px;
+    border-style: solid;
+    width: 50%;
+    border-color: red;
+    height: 200px;
+}
+
+.transition-property-box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    transition: width 2s ease-in-out, background-color 1s ease;
+}
+
+.transition-property-box:hover {
+    width: 150px;
+    height: 150px;
+    background-color: #8e44ad;
+    transform: rotate(45deg);
+}

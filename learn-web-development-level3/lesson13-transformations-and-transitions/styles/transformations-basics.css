@@ -1,0 +1,55 @@
+.container {
+    padding: 10px;
+    border-style: solid;
+    width: 50%;
+    border-color: red;
+    height: auto;
+}
+
+.scale-box {
+    width: 100px;
+    height: 100px;
+    background-color: #2ecc71;
+    transition: transform 0.5s ease;
+}
+
+.scale-box:hover {
+    transform: scale(1.5);
+}
+
+
+.rotate-box {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    transition: transform 0.5s;
+}
+
+.rotate-box:hover {
+    transform: rotate(45deg);
+}
+.skew-box {
+    width: 100px;
+    height: 100px;
+    background-color: #2ecc71;
+    transition: transform 0.5s;
+}
+
+.skew-box:hover {
+    transform: skew(20deg, 10deg);
+}
+
+.combined-box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    transition: transform 0.5s;
+}
+
+.combined-box:hover {
+    transform:
+            translate(50px, 50px)
+            rotate(45deg)
+            scale(1.5)
+            skew(20deg, 10deg);
+}

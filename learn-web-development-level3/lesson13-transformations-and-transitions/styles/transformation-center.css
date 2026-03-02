@@ -1,0 +1,81 @@
+.container {
+    padding: 10px;
+    border-style: solid;
+    width: 50%;
+    border-color: red;
+    height: 130px;
+}
+
+.origin-point-box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    transform: rotate(45deg);
+}
+
+.left-corner-box {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    transform: rotate(45deg);
+    transform-origin: top left;
+}
+
+.right-corner-box {
+    width: 100px;
+    height: 100px;
+    background-color: #2ecc71;
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+}
+
+.percentage-box {
+    width: 100px;
+    height: 100px;
+    background-color: #9b59b6;
+    transform: rotate(45deg);
+    transform-origin: 25% 75%;
+}
+
+.absolute-box {
+    width: 100px;
+    height: 100px;
+    background-color: #f1c40f;
+    transform: rotate(45deg);
+    transform-origin: 50px 20px;
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #333;
+    border-radius: 50%;
+    margin: 50px auto;
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 5px;
+    height: 50%;
+    background-color: #333;
+    transform-origin: bottom center;
+}
+
+.hour-hand {
+    transform: rotate(30deg);
+}
+
+.scalable-box {
+    width: 100px;
+    height: 100px;
+    background-color: #1abc9c;
+    transition: transform 0.5s;
+    transform-origin: top left;
+}
+
+.scalable-box:hover {
+    transform: scale(1.5);
+}
