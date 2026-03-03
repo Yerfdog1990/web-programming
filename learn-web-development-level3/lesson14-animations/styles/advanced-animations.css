@@ -1,0 +1,71 @@
+.container{
+    padding: 10px;
+    border-color: red;
+    border-style: solid;
+    border-width: 1px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.combined-box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    animation: combined 4s infinite alternate;
+}
+
+@keyframes combined {
+    0% {
+        transform: scale(1) rotate(0deg) translateX(0);
+    }
+
+    50% {
+        transform: scale(1.5) rotate(45deg) translateX(100px);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg) translateX(0);
+    }
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.trigger-box {
+    width: 100px;
+    height: 100px;
+    background-color: #2ecc71;
+    position: relative;
+}
+
+.trigger-box.animate {
+    animation: moveAndRotate 3s forwards;
+}
+
+@keyframes moveAndRotate {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(200px) rotate(360deg);
+    }
+}
+
+.tracking-box {
+    width: 100px;
+    height: 100px;
+    background-color: #9b59b6;
+    animation: scaleUp 2s infinite;
+}
+
+@keyframes scaleUp {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}

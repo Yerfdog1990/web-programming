@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>advanced-animations</title>
+    <link rel="stylesheet" href="../styles/advanced-animations.css">
+</head>
+<body>
+<h1>Advanced Animations</h1>
+<h2>1. Combined Animations (CSS)</h2>
+<div class="container">
+    <div class="combined-box"></div>
+</div>
+<h2>2 JavaScript Animations with requestAnimationFrame</h2>
+<div class="container">
+    <h3>Example: Moving a Ball</h3>
+    <div class="ball"></div>
+    <script>
+        const ball = document.querySelector('.ball');
+        let start = null;
+
+        function animate(time) {
+            if (!start) start = time;
+
+            let progress = time - start;
+
+            // Move up to 200px over 2 seconds
+            ball.style.left = Math.min(progress / 10, 200) + 'px';
+
+            if (progress < 2000) {
+                requestAnimationFrame(animate);
+            }
+        }
+        requestAnimationFrame(animate);
+    </script>
+</div>
+<h2>3. Controlling CSS Animations with JavaScript</h2>
+<div class="container">
+    <h3>Example: Trigger Animation on Button Click</h3>
+    <div class="trigger-box" id="box"></div>
+    <br>
+    <button id="startButton">Start Animation</button>
+
+    <script>
+        document.getElementById('startButton')
+            .addEventListener('click', function() {
+                document.getElementById('box')
+                    .classList.toggle('animate');
+            });
+    </script>
+</div>
+<h2>4. Interacting with Animations via Events</h2>
+<div class="container">
+    <h3>Example: Tracking Animation Events</h3>
+    <div class="tracking-box" id="trigger-box"></div>
+
+    <script>
+        const box = document.getElementById('trigger-box');
+
+        box.addEventListener('animationstart', () => {
+            console.log('Animation started');
+        });
+
+        box.addEventListener('animationend', () => {
+            console.log('Animation ended');
+        });
+
+        box.addEventListener('animationiteration', () => {
+            console.log('Animation iteration');
+        });
+    </script>
+</div>
+</body>
+</html>
