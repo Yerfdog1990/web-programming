@@ -1,0 +1,143 @@
+.container{
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .query-basics {
+        background-color: lightblue;
+        border: 2px solid blue;
+    }
+    .query-basics::after {
+        content: " (Active: <= 768px)";
+        color: blue;
+        font-weight: bold;
+    }
+}
+
+/* Apply styles if width ≤ 768px */
+
+@media (max-width: 768px) {
+    .width-height-queries {
+        padding: 30px;
+        background-color: lightyellow;
+    }
+    .width-height-queries::after {
+        content: " (Active: width <= 768px)";
+        color: orange;
+    }
+}
+
+/* Apply styles if height ≥ 800px */
+
+@media (min-height: 800px) {
+    .width-height-queries {
+        min-height: 300px;
+        background-color: lightgreen;
+    }
+    .width-height-queries::before {
+        content: " (Active: height >= 800px) ";
+        color: green;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media (orientation: portrait) {
+    .orientation-queries {
+        background-color: lightgoldenrodyellow;
+        border: 2px dashed orange;
+    }
+    .orientation-queries::after {
+        content: " (Portrait Mode)";
+    }
+}
+
+@media (orientation: landscape) {
+    .orientation-queries {
+        background-color: lightcyan;
+        border: 2px solid darkcyan;
+    }
+    .orientation-queries::after {
+        content: " (Landscape Mode)";
+    }
+}
+
+@media (min-resolution: 2dppx) {
+    .pixel-density-queries {
+        background-color: lightgreen;
+        background-image: url('../assets/Flag_of_Kenya.svg.png');
+        background-size: 300px 200px;
+        height: 200px;
+    }
+    .pixel-density-queries::after {
+        content: " (High Resolution)";
+    }
+}
+
+@media (max-resolution: 1.99dppx) {
+    .pixel-density-queries {
+        background-color: lightcoral;
+        background-image: url('../assets/Flag_of_Kenya.svg.png');
+        background-size: 300px 200px;
+        height: 200px;
+    }
+    .pixel-density-queries::after {
+        content: " (Standard Resolution)";
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .and-combined-queries {
+        margin: 0 auto;
+        width: 80%;
+        background-color: #e0f7fa;
+    }
+    .and-combined-queries::after {
+        content: " (Active: 600px - 1200px)";
+        font-weight: bold;
+        color: #006064;
+    }
+}
+
+@media not all and (max-width: 600px) {
+    .not-combined-queries {
+        background-color: lightgreen;
+        color: darkgreen;
+    }
+    .not-combined-queries::after {
+        content: " (NOT width <= 600px: Active)";
+    }
+}
+
+@media (max-width: 600px) {
+    .not-combined-queries {
+        background-color: lightpink;
+        color: darkred;
+    }
+    .not-combined-queries::after {
+        content: " (NOT width <= 600px: Inactive)";
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .only-combined-queries {
+        background-color: lightblue;
+        color: blue;
+    }
+    .only-combined-queries::after {
+        content: " (only screen and max-width 768px: Active)";
+    }
+}
+
+@media (min-width: 769px) {
+    .only-combined-queries {
+        background-color: lightgray;
+        color: gray;
+    }
+    .only-combined-queries::after {
+        content: " (only screen and max-width 768px: Inactive)";
+    }
+}

@@ -1,0 +1,73 @@
+.container{
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Basic styles for mobile devices */
+
+.mobile-first-approach {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for larger screens */
+
+@media (min-width: 768px) {
+    .mobile-first-approach {
+        font-size: 18px;
+    }
+}
+
+/* Basic styles for all browsers */
+.mobile-first-approach {
+    font-family: Arial, sans-serif;
+}
+
+/* Enhanced styles for modern browsers */
+@supports (display: grid) {
+    .progressive-enhancement {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.fluid-layout {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.item-1 {
+    min-height: 50px;
+    width: calc(100% / 3);
+    float: left;
+    background: purple;
+    padding: 10px;
+}
+
+.item-2 {
+    background: gray;
+    padding: 10px;
+}
+
+.content-hierarchy {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+}
