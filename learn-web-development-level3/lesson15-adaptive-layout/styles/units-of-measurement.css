@@ -1,0 +1,59 @@
+.container{
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.percentage-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+
+.percentage-box {
+    width: 50%;
+    padding-top: 25%; /* Aspect ratio 1:2 */
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.percentage-box::before {
+    content: "";
+    display: block;
+    padding-top: 50%; /* Aspect ratio 2:1 */
+}
+
+.em-parent {
+    font-size: 16px;
+}
+
+.em-child {
+    font-size: 1.5em; /* 1.5 × 16px = 24px */
+    padding: 1em;     /* 1 × 16px = 16px */
+    background-color: green;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+html {
+    font-size: 16px;
+}
+
+.rem-container {
+    font-size: 1rem;  /* 16px */
+    padding: 2rem;    /* 32px */
+}
+
+.rem-box {
+    font-size: 1.5rem; /* 24px */
+    margin: 1rem;      /* 16px */
+    background-color: deeppink;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+

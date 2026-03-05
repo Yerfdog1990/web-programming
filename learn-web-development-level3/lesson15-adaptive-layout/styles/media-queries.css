@@ -68,7 +68,7 @@
 @media (min-resolution: 2dppx) {
     .pixel-density-queries {
         background-color: lightgreen;
-        background-image: url('../assets/Flag_of_Kenya.svg.png');
+        background-image: url('../assets/Flag_of_Kenya.default.png');
         background-size: 300px 200px;
         height: 200px;
     }
@@ -80,7 +80,7 @@
 @media (max-resolution: 1.99dppx) {
     .pixel-density-queries {
         background-color: lightcoral;
-        background-image: url('../assets/Flag_of_Kenya.svg.png');
+        background-image: url('../assets/Flag_of_Kenya.default.png');
         background-size: 300px 200px;
         height: 200px;
     }

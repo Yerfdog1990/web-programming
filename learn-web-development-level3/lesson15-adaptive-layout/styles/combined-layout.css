@@ -1,0 +1,33 @@
+html {
+    font-size: 16px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header, .footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.sidebar {
+    flex: 1 1 30%;
+    background-color: #f4f4f4;
+    padding: 1rem;
+}
+
+.main {
+    flex: 1 1 70%;
+    background-color: #e4e4e4;
+    padding: 1rem;
+}
