@@ -1,0 +1,31 @@
+.container{
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.font-size{
+    font-size: 40px;
+}
+
+body{
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.viewpoint-width{
+    font-size: 4vw;
+}
+
+.viewpoint-height{
+    font-size: 4vh;
+}
+
+.viewpoint-min{
+    font-size: 4vmin;
+}
+
+.viewpoint-max{
+    font-size: 4vmax;
+}

@@ -1,0 +1,47 @@
+
+/* Basic styles for mobile devices */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+header, main, footer {
+    margin: 10px 0;
+}
+
+header {
+    text-align: center;
+}
+
+/* Styles for tablets */
+
+@media (min-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    header, main, footer {
+        margin: 20px 0;
+    }
+
+    header {
+        text-align: left;
+    }
+
+}
+
+/* Styles for desktops */
+
+@media (min-width: 1024px) {
+
+    body {
+        padding: 30px;
+    }
+
+    header, main, footer {
+        margin: 30px 0;
+    }
+
+}
