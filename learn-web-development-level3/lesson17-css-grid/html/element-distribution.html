@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>element-distribution</title>
+  <link rel="stylesheet" href="../styles/element-distribution.css">
+</head>
+<body>
+<h1>Element Distribution</h1>
+<h2>The grid-column Property</h2>
+<div class="container">
+  <h3>Positioning an Element in a Specific Column</h3>
+  <div class="repeat-column-grid-container">
+    <div class="occupy-one-column-grid-item grid-item">Occupy one column</div>
+  </div>
+  <div class="repeat-column-grid-container">
+    <div class="grid-item">Item 1</div>
+    <div class="grid-item">Item 2</div>
+    <div class="grid-item">Item 3</div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <h3>Element Occupying Multiple Columns</h3>
+  <div class="repeat-column-grid-container">
+    <div class="occupy-multiple-columns-grid-item grid-item">Occupy multiple columns</div>
+  </div>
+  <div class="repeat-column-grid-container">
+    <div class="grid-item">Item 1</div>
+    <div class="grid-item">Item 2</div>
+    <div class="grid-item">Item 3</div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <h3>Using span Multiple Columns</h3>
+  <div class="repeat-column-grid-container">
+    <div class="span-multiple-columns-grid-item grid-item">Span multiple columns</div>
+  </div>
+  <div class="repeat-column-grid-container">
+    <div class="grid-item">Item 1</div>
+    <div class="grid-item">Item 2</div>
+    <div class="grid-item">Item 3</div>
+  </div>
+</div>
+<h2>2. The grid-row Property</h2>
+<div class="container">
+  <h3>Positioning an Element in a Specific Row</h3>
+  <div class="fractional-column-grid-container">
+    <div class="occupy-one-row-grid-item grid-item">Row 3 item</div>
+    <div class="grid-item">Item 1</div>
+    <div class="grid-item">Item 2</div>
+    <div class="grid-item">Item 3</div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <h3>Element Occupying Multiple Rows</h3>
+  <div class="fractional-column-grid-container">
+    <div class="occupy-multiple-rows-grid-item grid-item">Occupy multiple rows</div>
+      <div class="grid-item">Item 1</div>
+      <div class="grid-item">Item 2</div>
+      <div class="grid-item">Item 3</div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <h3>Using span Multiple Rows</h3>
+  <div class="fractional-column-grid-container">
+    <div class="span-multiple-rows-grid-item grid-item">Span multiple rows</div>
+      <div class="grid-item">Item 1</div>
+      <div class="grid-item">Item 2</div>
+      <div class="grid-item">Item 3</div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <h3>Using Negative Grid Line Values</h3>
+  <div class="fractional-column-grid-container">
+    <div class="negative-span-multiple-columns-grid-item grid-item">Span multiple rows</div>
+      <div class="grid-item">Item 1</div>
+      <div class="grid-item">Item 2</div>
+      <div class="grid-item">Item 3</div>
+  </div>
+</div>
+<h2>3. Combining grid-row and grid-column</h2>
+<div class="container">
+  <h3>Example: Combining grid-row and grid-column</h3>
+  <div class="combined-container">
+    <div class="item1">Item 1</div>
+    <div class="item2">Item 2</div>
+    <div class="item3">Item 3</div>
+  </div>
+</div>
+</body>
+</html>
