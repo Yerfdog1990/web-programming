@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/structural-pseudo-classes.css">
+    <title>structural-pseudo-classes</title>
+</head>
+<body>
+<h1>Structural Pseudo-classes</h1>
+<h2>1. Pseudo-class :first-child</h2>
+<div class="container">
+    <h3>Styling the first list item</h3>
+    <ul class="first1">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+    </ul>
+    <hr>
+    <h3>Styling the first paragraph inside a div</h3>
+    <div class="first2">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+    </div>
+</div>
+<h2>2. Pseudo-class :last-child</h2>
+<div class="container">
+    <h3>Styling the last list item</h3>
+    <ul class="last1">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+    </ul>
+    <hr>
+    <h3>Styling the last paragraph inside a div</h3>
+    <div class="last2">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+    </div>
+</div>
+<h2>3. Pseudo-class :nth-child()</h2>
+<div class="container">
+    <h3>Number argument (li:nth-child(3))</h3>
+    <ul class="number">
+        <li>Watermelon</li>
+        <li>Peach</li>
+        <li>Pear</li>
+        <li>Grapes</li>
+        <li>Cherry</li>
+        <li>Blueberry</li>
+        <li>Blackberry</li>
+        <li>Raspberry</li>
+        <li>Kiwifruit</li>
+    </ul>
+    <hr>
+    <h3>Letter argument (li:nth-child(2n))</h3>
+    <ul class="letter">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Pineapple</li>
+        <li>Blueberry</li>
+        <li>Blackberry</li>
+        <li>Raspberry</li>
+        <li>Kiwifruit</li>
+    </ul>
+    <hr>
+    <h3>Expression arguments (li:nth-child(2n+1))</h3>
+    <ul class="expression1">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Pineapple</li>
+        <li>Strawberry</li>
+        <li>Watermelon</li>
+        <li>Peach</li>
+        <li>Pear</li>
+    </ul>
+    <hr>
+    <h3>Keywords arguments (li:nth-child(odd))</h3>
+    <ul class="keywords">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Pineapple</li>
+        <li>Strawberry</li>
+        <li>Watermelon</li>
+    </ul>
+    <hr>
+    <h3>Keywords argument (li:nth-child(even))</h3>
+    <ul class="even">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Pineapple</li>
+    </ul>
+</div>
+<h2>4. Pseudo-class :nth-of-type()</h2>
+<div class="container">
+    <h3>Selecting Even Paragraphs (p:nth-of-type(even))</h3>
+    <div class = "even-nth-para">
+        <p>Paragraph 1</p>
+        <h2>Heading</h2>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+    </div>
+    <hr>
+    <h3>Selecting Odd Paragraphs (p:nth-of-type(odd))</h3>
+    <div class = "odd-nth-para">
+        <p>Paragraph 1</p>
+        <h2>Heading</h2>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+    </div>
+    <hr>
+    <h3>Using Expressions (p:nth-of-type(2n+2))</h3>
+    <div class = "expression2">
+        <p>Paragraph 1</p>
+        <h2>Heading</h2>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+    </div>
+    <hr>
+    <h3>Selecting Elements at a Specific Position (h2:nth-of-type(2))</h3>
+    <div class = "position">
+        <h2>Heading 1</h2>
+        <h2>Heading 2</h2>
+        <h2>Heading 3</h2>
+        <h2>Heading 4</h2>
+        <h2>Heading 5</h2>
+        <h2>Heading 6</h2>
+    </div>
+</div>
+<h3>6. nth-child vs. nth-of-type</h3>
+<div class="container">
+    <h3>nth-child(3)</h3>
+    <div class = "child">
+        <p>Paragraph 1</p>
+        <h2>Heading</h2>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+    </div>
+    <hr>
+    <h3>nth-of-type(3)</h3>
+    <div class = "type">
+        <p>Paragraph 1</p>
+        <h2>Heading</h2>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/form-pseudo-classes.css">
+    <title>form-pseudo-classes</title>
+</head>
+<body>
+<h1>Form Pseudo-classes</h1>
+<h2>1. Pseudo-class :checked</h2>
+<div class="container">
+    <h3>Styling the selected checkbox</h3>
+    <label>
+        <input type="checkbox"> Option 1
+    </label>
+
+    <hr>
+    <h3>Styling the selected radio button </h3>
+    <label>
+        <input type="radio" name="choice"> Choice 1
+    </label>
+
+    <label>
+        <input type="radio" name="choice"> Choice 2
+    </label>
+
+    <br><br>
+    <hr>
+    <h3>Styling selected option</h3>
+    <label for="colors">Choose a color:</label>
+    <select id="colors">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+    <p>Note: styling <b>"option"</b> elements has limited support across browsers.</p>
+    <p>It works in Firefox but often not in Chrome or Safari.</p>
+</div>
+<h2>2. Pseudo-class :disabled</h2>
+<div class="container">
+    <h3>Styling the disabled input field</h3>
+    <label for="disabled"></label>
+    <input id="disabled" type="text" placeholder="Disabled field" disabled>
+    <hr>
+    <h3>Styling the disabled button</h3>
+    <button disabled>Disabled Button</button>
+</div>
+<h2>3. Pseudo-class :enabled</h2>
+<div class="container">
+    <h3>Styling the enabled input field</h3>
+    <label for="enabled"></label>
+    <input id="enabled" type="text" placeholder="Enter your name">
+    <hr>
+    <h3>Styling the enabled button</h3>
+    <button>Submit</button>
+</div>
+<h2>3. Pseudo-class :invalid</h2>
+<div class="container">
+    <h3>Styling an invalid input field</h3>
+    <label for="invalid"></label>
+    <input id="invalid" type="email" placeholder="Enter your email" required>
+    <hr>
+    <h3>Styling an invalid text area</h3>
+    <label for="text"></label>
+    <textarea id="text" required></textarea>
+</div>
+<h2>4. Toggle Switch (Pure CSS)</h2>
+<div class="container">
+    <div class="toggle-container">
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="toggle-label"></label>
+    </div>
+</div>
+<h2>5. Show / Hide Content (Accordion)</h2>
+<div class="container">
+    <input type="checkbox" id="accordion">
+
+    <label for="accordion">Show Details</label>
+
+    <div class="content">
+        <p>This content appears when the checkbox is checked.</p>
+    </div>
+</div>
+<h2>6. CSS Tabs (No JavaScript)</h2>
+<div class="container">
+    <div class="tabs">
+
+        <input type="radio" name="tab" id="tab1" checked>
+        <label for="tab1">Tab 1</label>
+
+        <input type="radio" name="tab" id="tab2">
+        <label for="tab2">Tab 2</label>
+
+        <div class="content1">
+            <h3>Content for Tab 1</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="content2">
+            <h3>Content for Tab 2</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+
+    </div>
+</div>
+<h2>7. Responsive Mobile Navigation Menu Using :checked</h2>
+<div class="container">
+    <nav class="navbar">
+
+        <!-- Hidden checkbox -->
+        <input type="checkbox" id="menu-toggle">
+
+        <!-- Hamburger button -->
+        <label for="menu-toggle" class="menu-icon">
+            ☰
+        </label>
+
+        <!-- Navigation menu -->
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+</div>
+<h2>8. Dark Mode Toggle Using :checked and CSS Variables</h2>
+<div class="container">
+    <input type="checkbox" id="theme-toggle">
+
+    <label for="theme-toggle" class="toggle">
+        Toggle Dark Mode
+    </label>
+
+    <div class="page">
+        <h1>My Website</h1>
+        <p>This page changes theme using pure CSS.</p>
+    </div>
+</div>
+</body>
+</html>

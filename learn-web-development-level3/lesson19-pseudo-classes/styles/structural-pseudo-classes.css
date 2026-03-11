@@ -1,0 +1,103 @@
+.container{
+    border: 1px solid red;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Styling the first list item */
+.first1 li:first-child {
+    font-weight: bold;
+    color: red;
+}
+
+/* Styling the first paragraph inside a div */
+.first2 p:first-child {
+    text-transform: uppercase;
+}
+
+/* Styling the last list item */
+.last1 li:last-child {
+    font-style: italic;
+    color: blue;
+}
+
+/* Styling the last paragraph inside a div */
+.last2 p:last-child {
+    text-decoration: underline;
+}
+
+.number li:nth-child(3) {
+    font-weight: bold;
+    color: green;
+}
+
+.letter li:nth-child(2n) {
+    font-weight: bold;
+    color: deeppink;
+}
+
+.expression1 li:nth-child(2n+1) {
+    font-weight: bold;
+    color: saddlebrown;
+}
+
+.keywords li:nth-child(odd) {
+    font-weight: bold;
+    color: purple;
+}
+
+.even li:nth-child(even) {
+    font-weight: bold;
+    color: orange;
+}
+
+.even-para p:nth-of-type(even) {
+    background-color: deepskyblue;
+    color: white;
+}
+
+.odd-para p:nth-of-type(odd) {
+    background-color: darkslategrey;
+    color: white;
+}
+
+.even-nth-para p:nth-of-type(even) {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.odd-nth-para p:nth-of-type(odd) {
+    font-style: revert;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
+
+.expression2 p:nth-of-type(even) {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+}
+
+.position h2:nth-of-type(2) {
+    font-size: 2em;
+    color: orange;
+    font-weight: bold;
+}
+
+.child p:nth-child(3) {
+    font-style: revert;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
+
+.type p:nth-of-type(3) {
+    font-style: revert;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}

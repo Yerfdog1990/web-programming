@@ -1,0 +1,243 @@
+.container{
+    border: 1px solid red;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Styling selected checkbox */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+/* Styling selected radio button */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+/* Styling selected option */
+/* Note: styling <option> elements has limited support across browsers.
+   It works in Firefox but often not in Chrome or Safari. */
+option:checked {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Styling disabled input field */
+input:disabled {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+    color: #888;
+}
+
+/* Styling disabled button */
+button:disabled {
+    background-color: #d0d0d0;
+    color: #777;
+    cursor: not-allowed;
+}
+
+/* Styling enabled input field */
+input:enabled {
+    background-color: #fff;
+    border-color: red;
+}
+
+/* Styling enabled button */
+button:enabled {
+    background-color: #2ecc71;
+    color: white;
+    cursor: pointer;
+
+}
+
+/* Styling invalid input field */
+input:invalid {
+    border-color: #e74c3c;
+    background-color: #f9e0e0;
+}
+
+/* Styling invalid text area */
+textarea:invalid {
+    border-color: #e74c3c;
+    background-color: #f9e0e0;
+}
+
+/* Hide checkbox */
+#toggle {
+    display: none;
+}
+
+/* Toggle track */
+.toggle-label {
+    width: 60px;
+    height: 30px;
+    background: #ccc;
+    display: inline-block;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Toggle circle */
+.toggle-label::after {
+    content: "";
+    width: 26px;
+    height: 26px;
+    background: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+/* When checked */
+#toggle:checked + .toggle-label {
+    background: #4caf50;
+}
+
+#toggle:checked + .toggle-label::after {
+    transform: translateX(30px);
+}
+
+.content {
+    display: none;
+}
+
+/* Show content when checkbox is checked */
+#accordion:checked + label + .content {
+    display: block;
+}
+
+/*------*/
+
+.tabs input {
+    display: none;
+}
+
+.content1,
+.content2 {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0 4px 4px 4px;
+    margin-top: -1px;
+}
+
+/* Show content when radio is selected */
+
+#tab1:checked ~ .content1 {
+    display: block;
+}
+
+#tab2:checked ~ .content2 {
+    display: block;
+}
+
+/* Styling the active tab label */
+#tab1:checked + label,
+#tab2:checked + label {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+.tabs label {
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #eee;
+    border-radius: 4px 4px 0 0;
+    margin-right: 5px;
+}
+
+/*Styling Responsive Mobile Navigation Menu*/
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #444;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu-toggle:checked ~ .menu {
+    display: block;
+}
+
+/*Styling Dark Mode Toggle */
+
+:root {
+    --background: white;
+    --text-color: black;
+}
+
+#theme-toggle {
+    display: none;
+}
+
+.toggle {
+    display: inline-block;
+    background: #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.page {
+    background: var(--background);
+    color: var(--text-color);
+    padding: 20px;
+    transition: 0.3s;
+}
+
+#theme-toggle:checked ~ .page {
+    --background: #1e1e1e;
+    --text-color: white;
+}

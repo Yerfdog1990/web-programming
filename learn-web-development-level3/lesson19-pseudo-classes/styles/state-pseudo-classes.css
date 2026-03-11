@@ -1,0 +1,78 @@
+.container{
+    border: 1px solid red;
+    width: 50%;
+    padding: 10px;
+}
+
+
+/* Styling link on hover */
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Styling button on hover */
+
+button:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Styling input on focus */
+input:focus {
+    border: 2px solid red; /* Added width and style */
+    outline: none;         /* Removes the default browser glow */
+}
+
+/* Styling textarea on focus */
+textarea:focus {
+    background-color: red;
+    color: white;          /* Optional: makes text readable against red background */
+    outline: none;         /* Optional: removes default browser glow */
+}
+
+/* Styling link on press */
+
+a:active {
+    color: green;
+}
+
+/* Styling button on press */
+
+button:active {
+    background-color: #2980b9;
+    transform: scale(0.98);
+}
+
+/* Styling visited link */
+
+a:visited {
+    color: purple;
+}
+
+/* Base style for links */
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Styling visited link */
+
+a:visited {
+    color: purple;
+}
+
+/* Styling link on hover */
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Styling link on press */
+
+a:active {
+    color: green;
+}

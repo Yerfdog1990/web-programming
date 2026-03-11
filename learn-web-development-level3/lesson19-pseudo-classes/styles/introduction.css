@@ -1,0 +1,64 @@
+.container{
+    border: 1px solid red;
+    width: 50%;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+li:first-child {
+    font-weight: bold;
+    color: red;
+}
+
+li:last-child {
+    font-style: italic;
+    color: green;
+    font-size: 20px;
+}
+
+input:checked {
+    background-color: yellow;
+}
+
+input:disabled {
+    background-color: grey;
+}
+
+input:enabled {
+    background-color: cadetblue;
+}
+
+p:first-of-type {
+    font-weight: bold;
+}
+
+.hover:hover {
+    color: red;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+
+.lorem > p:nth-child(2n) {
+    color: red;
+}
+
+.lorem > p:nth-child(odd) {
+    color: green;
+}
