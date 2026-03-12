@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/pseudo-elements.css">
+    <title>pseudo-elements</title>
+</head>
+<body>
+<h1>Pseudo-elements</h1>
+<h2>1. Adding Decorative Elements</h2>
+<div class="container">
+    <div class="decorative-element">
+        <a href="#">Visit Website</a>
+
+        <p>This is a paragraph with decorative styling.</p>
+    </div>
+</div>
+<h2>2. Styling First Letters and Lines</h2>
+<div class="container">
+    <div class="first-letter">
+        <h3>Decorate the first letter</h3>
+        <p>
+            CSS pseudo-elements allow developers to style specific parts of text
+            without modifying the HTML.
+        </p>
+    </div>
+    <hr>
+    <div class="first-line">
+        <h3>Decorate the first line</h3>
+        <p>
+            CSS pseudo-elements allow developers to style specific parts of text
+            without modifying the HTML.
+        </p>
+    </div>
+</div>
+<h2>3. Styling Text Selection</h2>
+<div class="container">
+    Lorem ipsum is dummy text used in design and publishing to preview layouts without focusing on content. It originated from a scrambled passage of Cicero’s 'De finibus bonorum et malorum' and remains widely used for its neutral, non-distracting appearance. Tools like lorem ipsum generate this placeholder text quickly, helping designers visualize typography, spacing, and structure during mockups.
+</div>
+<h2>4. Example: Using Empty Content for Decoration</h2>
+<div class="container">
+    <div class="empty-content">
+        <div>Welcome to my website</div>
+    </div>
+</div>
+<h2>6. Style input placeholder text </h2>
+<div class="container">
+    <div class="placeholder">
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name">
+    </div>
+</div>
+<h2>7. Styles list item markers (bullets or numbers)</h2>
+<div class="container">
+    <ul class="list-style">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+</div>
+<h2> 8. Styles the button inside file input fields.</h2>
+<div class="container">
+    <div class="file">
+        <input type="file">
+    </div>
+</div>
+<h2>9. Styles the background layer of fullscreen elements.</h2>
+<div class="container">
+    <div class="fullscreen" id="fs-element">
+        <h3>Fullscreen Element</h3>
+        <p>This is a fullscreen element. Click the button to see the backdrop.</p>
+        <button onclick="document.getElementById('fs-element').requestFullscreen()">Go Fullscreen</button>
+    </div>
+    <hr>
+    <div>
+        <h3>Dialog Backdrop</h3>
+        <p>A <code>&lt;dialog&gt;</code> element's <code>::backdrop</code> is visible when opened as a modal.</p>
+        <button id="openDialog">Open Modal Dialog</button>
+        <dialog id="myDialog">
+            <p>This is a modal dialog. Notice the dark backdrop!</p>
+            <button id="closeDialog">Close</button>
+        </dialog>
+    </div>
+</div>
+
+<h2>10. Styles subtitles in video captions.</h2>
+<div class="container">
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<h2>11. Animated Link Underline</h2>
+<div class="container">
+    <a href="#">Visit Website</a>
+</div>
+
+<h2>12. Custom Blockquote Decoration</h2>
+<div class="container">
+    <blockquote>
+        Learning never exhausts the mind.
+    </blockquote>
+</div>
+<h2>13. Button Shine Hover Effect</h2>
+<div class="container">
+        <button class="btn">Hover Me</button>
+</div>
+<h2>14. Notification Badge</h2>
+<div class="container">
+    <div class="notification">Messages</div>
+</div>
+<h2>15. Image Overlay Effect</h2>
+<div class="container">
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Kenya.svg/960px-Flag_of_Kenya.svg.png" alt="Kenya Flag">
+    </div>
+</div>
+<h2>16.  Section Divider Lines</h2>
+<div class="container">
+    <h2 class="title">Features</h2>
+</div>
+<h2>17. Tooltip Without JavaScript</h2>
+<div class="container">
+    <span class="tooltip" data-text="This is a tooltip">Hover me</span>
+</div>
+<script>
+    const dialog = document.getElementById('myDialog');
+    const openBtn = document.getElementById('openDialog');
+    const closeBtn = document.getElementById('closeDialog');
+
+    openBtn.addEventListener('click', () => dialog.showModal());
+    closeBtn.addEventListener('click', () => dialog.close());
+</script>
+</body>
+</html>
