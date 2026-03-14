@@ -1,0 +1,72 @@
+:root{
+    --container-width: 50%;
+    --container-padding: 20px;
+    --container-border: 1px solid red ;
+    --main-padding: 20px;
+}
+
+.container {
+    width: calc(var(--container-width) - var(--container-padding) * 2);
+    border: var(--container-border);
+    padding: var(--container-padding);
+}
+
+.addition {
+    width: calc(100% - 40px);
+    margin: 20px;
+    background: lightgreen;
+}
+
+.sidebar {
+    width: calc(100% - 250px);
+    background: tomato;
+}
+
+.element {
+    height: calc(20px * 3);
+    background: lightpink;
+}
+
+.box {
+    width: calc(100% / 3);
+    background: yellow;
+}
+
+.header {
+    height: calc(100vh - 100px);
+    background: lightgreen;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.content {
+    width: calc(100% - 2 * 20px);
+    background: lightgreen;
+}
+
+.media-query {
+    padding: 10px;
+    background: tomato;
+}
+
+@media (min-width: 600px) {
+    .media-query {
+        padding: calc(10px + 2vw);
+    }
+}
+
+.variable {
+    padding: var(--main-padding);
+    background: yellow;
+}
+
+@media (max-width: 600px) {
+    .variable {
+        padding: calc(var(--main-padding) / 2);
+    }
+}

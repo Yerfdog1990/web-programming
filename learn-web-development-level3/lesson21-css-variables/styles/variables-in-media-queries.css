@@ -1,0 +1,141 @@
+:root {
+    /* Primary Colors */
+    --primary-color: #3498db;
+    --primary-hover: #2980b9;
+    
+    /* Semantic Colors (Light Mode Default) */
+    --bg-color: #ffffff;
+    --text-color: #2c3e50;
+    --link-color: var(--primary-color);
+    --header-bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --grid-item-bg: var(--primary-color);
+    --grid-item-text: #ffffff;
+    
+    /* Layout */
+    --padding: 24px;
+    --font-size: 18px;
+    --margin: 20px;
+    --gap: 16px;
+    --container-width: 100%;
+    --container-max-width: 1200px;
+    --border-radius: 8px;
+    --border-color: #e0e0e0;
+    --container-border: 1px solid var(--border-color);
+    
+    /* Grid */
+    --columns: 1fr;
+}
+
+/* Dark Mode Overrides */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1a1a;
+        --text-color: #ecf0f1;
+        --link-color: #9b59b6;
+        --header-bg: #2c3e50;
+        --card-bg: #2c3e50;
+        --border-color: #3d3d3d;
+        --grid-item-bg: #9b59b6;
+    }
+}
+
+/* Responsive Adjustments using Modern Range Syntax */
+@media (width <= 600px) {
+    :root {
+        --padding: 16px;
+        --font-size: 15px;
+        --margin: 10px;
+        --bg-color: #f0f0f0; /* Keeping original flavor but cleaned up */
+    }
+}
+
+@media (600px < width <= 1024px) {
+    :root {
+        --padding: 20px;
+        --font-size: 17px;
+        --columns: repeat(2, 1fr);
+    }
+}
+
+@media (width > 1024px) {
+    :root {
+        --columns: repeat(3, 1fr);
+    }
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: var(--font-size);
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: var(--margin);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    background-color: var(--header-bg);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--primary-hover);
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: var(--padding);
+    border: var(--container-border);
+    border-radius: var(--border-radius);
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    width: var(--container-width);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: var(--columns);
+    gap: var(--gap);
+    margin-top: 1.5rem;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grid-item-bg);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    color: var(--grid-item-text);
+    font-weight: bold;
+    min-height: 100px;
+    transition: transform 0.2s;
+}
+
+.item:hover {
+    transform: translateY(-4px);
+}
+
+/* For compatibility with existing .box in the CSS (though not in HTML) */
+.box {
+    width: var(--container-width);
+    border: var(--container-border);
+    padding: var(--padding);
+}

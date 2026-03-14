@@ -1,0 +1,48 @@
+.container{
+    width: 50%;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+:root {
+    --main-bg-color: #f0f0f0;
+    --main-text-color: #333;
+    --primary-color: #3498db;
+    --font-size: 16px;
+    --padding: 10px;
+    --margin: 20px;
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+div {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-size: var(--font-size);
+}
+
+a {
+    color: var(--primary-color);
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: var(--main-bg-color);
+}
+
+.footer {
+    --primary-color: #e74c3c; /* Overriding a variable */
+    background-color: var(--primary-color);
+    color: var(--main-bg-color);
+}
+
+.combine {
+    padding: var(--padding);
+    margin: var(--margin) auto;
+    border: 1px solid black;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/using-css-variables.css">
+    <title>introduction-to-css-variables</title>
+</head>
+<body>
+<h2>1. Basic Use of Variables</h2>
+<div class="container">
+    <div class="content">
+        <p>This is a paragraph with a link to <a href="#">Example.com</a>.</p>
+    </div>
+</div>
+<h2>2. Overriding Variables in Individual Components</h2>
+<div class="container">
+    <div class="header">
+        <p>This is the header.</p>
+    </div>
+
+    <div class="footer">
+        <p>This is the footer.</p>
+    </div>
+</div>
+<h2>3. Combining Variables with Other Values</h2>
+<div class="container">
+    <div class="combine">
+        <p>This is a container with padding and margin.</p>
+    </div>
+</div>
+<h2>4. Using CSS Variables in JavaScript</h2>
+<div class="container">
+    <button id="toggle-theme">Toggle Theme</button>
+    <p>This is a paragraph.</p>
+</div>
+
+<script>
+    document.getElementById('toggle-theme').addEventListener('click', () => {
+
+        const root = document.documentElement;
+
+        if (root.style.getPropertyValue('--bg-color') === '#ffffff') {
+            root.style.setProperty('--bg-color', '#333333');
+            root.style.setProperty('--text-color', '#ffffff');
+        } else {
+            root.style.setProperty('--bg-color', '#ffffff');
+            root.style.setProperty('--text-color', '#000000');
+        }
+
+    });
+</script>
+</body>
+</html>

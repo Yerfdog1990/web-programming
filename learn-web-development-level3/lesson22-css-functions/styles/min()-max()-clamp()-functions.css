@@ -1,0 +1,37 @@
+:root{
+    --container-width: 50%;
+    --container-padding: 20px;
+    --container-border: 1px solid red ;
+    --main-padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: clamp(200px, 50%, 600px);
+}
+
+.text {
+    font-size: clamp(1em, 2vw, 2em);
+}
+
+.sidebar {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: max(200px, 30%);
+}
+
+.text-small {
+    font-size: min(2em, 5vw);
+}

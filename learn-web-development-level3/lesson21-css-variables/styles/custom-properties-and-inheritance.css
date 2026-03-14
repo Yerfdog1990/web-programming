@@ -1,0 +1,20 @@
+
+:root {
+    --main-padding: 10px;
+    --main-margin: 20px;
+    --primary-color: #3498db;
+}
+
+.container {
+    padding: var(--main-padding);
+    margin: var(--main-margin);
+}
+
+.container .header {
+    --primary-color: #e74c3c; /* Local variable override */
+    color: var(--primary-color);
+}
+
+.container .content {
+    color: var(--primary-color); /* Uses root variable value */
+}
