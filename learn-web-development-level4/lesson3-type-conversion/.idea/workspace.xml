@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3851496-c1ff-4aa2-9085-3befedf39622" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../lesson3-type-conversion-and-functions/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson3-type-conversion-and-functions/.idea/vcs.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a3851496-c1ff-4aa2-9085-3befedf39622" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1773798944306</updated>
-      <workItem from="1773798945267" duration="13545000" />
+      <workItem from="1773798945267" duration="13766000" />
     </task>
     <servers />
   </component>
