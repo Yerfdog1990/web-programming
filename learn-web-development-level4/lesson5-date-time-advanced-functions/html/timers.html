@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<h1>Current Time</h1>
+<div id="time"></div>
+
+<script>
+    function updateTime() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString();
+        document.getElementById('time').textContent = timeString;
+    }
+
+    updateTime(); // Initial call
+    setInterval(updateTime, 1000); // Update every second
+</script>
+</body>
+</html>
