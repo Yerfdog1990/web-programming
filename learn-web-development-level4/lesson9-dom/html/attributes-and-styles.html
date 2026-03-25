@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>attributes-and-styles</title>
+</head>
+<body>
+<button type="button" id="myButton">Click me!</button>
+<p id="myParagraph1">This is a paragraph.</p>
+<p id="myParagraph2">This is a paragraph.</p>
+<script>
+  const btn = document.getElementById('myButton');
+  btn.addEventListener("click", () => {
+    btn.classList.toggle('highlight'); // Adds the class. Removes it on next click.
+  });
+
+  const paragraph1 = document.getElementById('myParagraph1');
+  paragraph1.style.color = 'red';
+  paragraph1.style.fontSize = '40px';
+
+  const paragraph2 = document.getElementById('myParagraph2');
+  const styles = window.getComputedStyle(paragraph2);
+  console.log(styles.color); // Outputs: rgb(0, 0, 255) or blue
+  console.log(styles.fontSize); // Outputs: 18px
+</script>
+</body>
+</html>

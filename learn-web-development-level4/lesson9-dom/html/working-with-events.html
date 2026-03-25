@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>working-with-events</title>
+</head>
+<body>
+<button id="myButton1">Click me</button>
+<br><br>
+<button id="myButton2">Click me</button>
+<br><br>
+<button id="myButton3">Click me</button>
+<br><br>
+<button id="myButton4">Click me</button>
+<br><br>
+<button id="removeButton">Remove Click Handler</button>
+<script>
+  // Single even handler
+  const button1 = document.getElementById('myButton1');
+
+  button1.addEventListener('click', function() {
+    alert('Button clicked!');
+  });
+
+  // Multiple event handlers
+  const button2 = document.getElementById('myButton2');
+
+  button2.addEventListener('click', function() {
+    console.log('First handler');
+    button2.style.backgroundColor = 'red';
+  });
+
+  button2.addEventListener('click', function() {
+    console.log('Second handler');
+    button2.textContent = 'Button clicked!';
+  });
+
+  // Handler that executes only once
+  const button3 = document.getElementById('myButton3');
+
+  button3.addEventListener('click', function() {
+    alert('This will be shown only once');
+  }, { once: true });
+
+  // Removing a click event handler
+  const button4 = document.getElementById('myButton4');
+  const removeButton = document.getElementById('removeButton');
+
+  function clickHandler() {
+    alert('Button clicked!');
+  }
+
+  button4.addEventListener('click', clickHandler);
+
+  removeButton.addEventListener('click', function() {
+    button4.removeEventListener('click', clickHandler);
+    alert('Click handler removed');
+  });
+</script>
+</body>
+</html>
