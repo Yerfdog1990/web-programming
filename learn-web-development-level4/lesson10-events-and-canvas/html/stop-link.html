@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stop-link</title>
+</head>
+<body>
+<a id="myLink" href="https://example.com">Go</a>
+
+<script>
+  const myLink = document.getElementById('myLink');
+
+  myLink.addEventListener('click', function(event) {
+    event.preventDefault();               // stop the link
+    console.log('Navigation cancelled');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>debounce</title>
+</head>
+<body>
+<label for="searchInput">Search box:</label>
+<input type="text" id="searchInput" placeholder="Start typing a query...">
+<div id="results"></div>
+
+<script>
+    const searchInput = document.getElementById('searchInput');
+    const results = document.getElementById('results');
+
+    function debounce(func, delay) {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), delay);
+        };
+    }
+
+    function performSearch(event) {
+        const query = event.target.value;
+        results.textContent = 'Searching for: ' + query;
+        setTimeout(() => {
+            results.textContent = 'You searched for: ' + query;
+        }, 500);
+    }
+
+    const debouncedSearch = debounce(performSearch, 300);
+    searchInput.addEventListener('input', debouncedSearch);
+</script>
+</body>
+</html>

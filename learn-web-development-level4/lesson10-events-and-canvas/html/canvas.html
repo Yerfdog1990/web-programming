@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<h4><u>Filled rectangle – fillRect(x, y, width, height)</u></h4>
+<canvas id="filled_rectCanvas" width="800" height="600"></canvas>
+<br>
+<hr>
+<br>
+<h4><u>Outlined rectangle – strokeRect(x, y, width, height)</u></h4>
+<canvas id="outline_rectCanvas" width="800" height="600"></canvas>
+<h4><u>Complex animation – orbiting circle</u></h4>
+<canvas id="myCanvas" width="800" height="600"></canvas>
+<script>
+    const filledRect = document.getElementById('filled_rectCanvas');
+    const filledCtx = filledRect.getContext('2d');
+
+    filledCtx.fillStyle = 'blue';
+    filledCtx.fillRect(10, 10, 150, 100);
+
+
+    // Outlined rectangle – strokeRect(x, y, width, height)
+    const outlinedRect = document.getElementById('outline_rectCanvas');
+    const outlinedCtx = outlinedRect.getContext('2d');
+
+    outlinedCtx.strokeStyle = 'red';
+    outlinedCtx.strokeRect(10, 10, 150, 100);
+
+    // Animated circle
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    let angle = 0;
+
+    function animateCircle() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+        const radius = 50;
+
+        // stationary blue circle
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+        ctx.fillStyle = 'blue';
+        ctx.fill();
+
+        // orbiting red circle
+        ctx.beginPath();
+        ctx.arc(
+            centerX + Math.cos(angle) * 100,
+            centerY + Math.sin(angle) * 100,
+            radius, 0, Math.PI * 2
+        );
+        ctx.fillStyle = 'red';
+        ctx.fill();
+
+        angle += 0.05;
+        requestAnimationFrame(animateCircle);
+    }
+
+    animateCircle();
+</script>
+</body>
+</html>

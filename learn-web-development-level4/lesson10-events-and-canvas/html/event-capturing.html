@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event-capturing</title>
+</head>
+<body>
+<div id="parent">
+    <button id="child">Click Me</button>
+</div>
+
+<script>
+    // Event Capturing
+    const parent = document.getElementById('parent');
+    const child = document.getElementById('child');
+
+    parent.addEventListener('click', function(event) {
+        console.log('Parent clicked');
+    }, true);   // capture phase
+
+    child.addEventListener('click', function(event) {
+        console.log('Child clicked');
+    });
+</script>
+</body>
+</html>

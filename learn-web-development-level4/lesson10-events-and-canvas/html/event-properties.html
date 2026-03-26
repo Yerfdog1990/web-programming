@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>event-properties</title>
+</head>
+<body>
+<button id="myButton">Click me</button>
+
+<script>
+  const button = document.getElementById('myButton');
+
+  button.addEventListener('click', function(event) {
+    console.log('Event type:', event.type);          // "click"
+    console.log('Event target:', event.target);      // <button id="myButton">Click me</button>
+    console.log('Current target:', event.currentTarget); // <button id="myButton">Click me</button>
+    console.log('Event phase:', event.eventPhase);   // 2 (Target phase)
+    console.log('Bubbles:', event.bubbles);          // true
+    console.log('Cancelable:', event.cancelable);    // true
+    console.log('Time stamp:', event.timeStamp);     // e.g., 123456.789
+    console.log('Is trusted:', event.isTrusted);     // true
+  });
+</script>
+</body>
+</html>

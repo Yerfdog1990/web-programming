@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>load-event</title>
+</head>
+<body>
+<script>
+  window.addEventListener('load', function(event) {
+    console.log('Window fully loaded at', event.timeStamp);
+  });
+
+  document.addEventListener('DOMContentLoaded', function(event) {
+    console.log('DOM fully loaded and parsed at', event.timeStamp);
+  });
+</script>
+</body>
+</html>

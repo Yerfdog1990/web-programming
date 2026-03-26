@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Focus Events Example</title>
+</head>
+<body>
+<label for="textInput">Text box</label>
+<input type="text" id="textInput" placeholder="Type something...">
+<script>
+    const input = document.getElementById('textInput');
+
+    input.addEventListener('focus', function(event) {
+        input.style.backgroundColor = 'yellow';
+        console.log(event);
+        console.log('Input field focused');
+    });
+
+    input.addEventListener('blur', function(event) {
+        input.style.backgroundColor = 'red';
+        console.log(event);
+        console.log('Input field lost focus');
+    });
+</script>
+</body>
+</html>

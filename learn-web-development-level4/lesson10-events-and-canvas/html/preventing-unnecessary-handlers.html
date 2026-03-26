@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>preventing-unnecessary-handlers</title>
+</head>
+<body>
+<button id="myButton">Click me!</button>
+<script>
+    const button = document.getElementById('myButton');
+    button.addEventListener('click', function(event) {
+        alert('You clicked the button');
+    }, { once: true });
+</script>
+</body>
+</html>

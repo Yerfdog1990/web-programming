@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mouse Events Example</title>
+</head>
+<body>
+<button id="myButton1">Click (click)</button>
+<br><br>
+<button id="myButton2">Double-click (dblclick)</button>
+<br><br>
+<button id="myButton3">Mouse Down (mousedown)</button>
+<br><br>
+<button id="myButton4">Mouse Up (mouseup)</button>
+<br><br>
+<button id="myButton5">Mouse Move (mousemove)</button>
+<br><br>
+<button id="myButton6">Mouse Over (mouseover)</button>
+<br><br>
+<button id="myButton7">Mouse Out (mouseout)</button>
+<script>
+    const button1 = document.getElementById('myButton1');
+
+    button1.addEventListener('click', function(event) {
+        console.log('Button clicked');
+        console.log('Event type:', event.type);
+        console.log('Target element:', event.target);
+    });
+
+    const button2 = document.getElementById('myButton2');
+
+    button2.addEventListener('dblclick', function(event) {
+        console.log('Button double-clicked');
+        console.log('Event type:', event.type);
+        console.log('Target element:', event.target);
+    });
+
+    const button3 = document.getElementById('myButton3');
+
+    button3.addEventListener('mousedown', function(event) {
+        console.log('Button mousedown');
+        console.log('Event type:', event.type);
+    });
+
+    const button4 = document.getElementById('myButton4');
+
+    button4.addEventListener('mouseup', function(event) {
+        console.log('Button mouseup');
+        console.log('Event type:', event.type);
+    });
+
+    const button5 = document.getElementById('myButton5');
+
+    button5.addEventListener('mousemove', function(event) {
+        console.log('Button mousemove');
+        console.log('Event type:', event.type);
+    });
+
+    const button6 = document.getElementById('myButton6');
+
+    button6.addEventListener('mouseover', function(event) {
+        console.log('Button mouseover');
+        console.log('Event type:', event.type);
+    });
+
+    const button7 = document.getElementById('myButton7');
+
+    button7.addEventListener('mouseout', function(event) {
+        console.log('Button mouseout');
+        console.log('Event type:', event.type);
+    });
+</script>
+</body>
+</html>

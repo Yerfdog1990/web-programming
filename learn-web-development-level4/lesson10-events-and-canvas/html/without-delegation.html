@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>without-delegation</title>
+</head>
+<body>
+<ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+<script>
+    const list = document.querySelector('ul');
+    const items = document.querySelectorAll('#list li');
+
+    items.forEach(item => {
+        item.addEventListener('click', function(event) {
+            const li = document.createElement('li');
+            li.innerText = "New item, event won't fire on it";
+            list.appendChild(li);
+            alert(`You clicked on: ${event.target.textContent}`);
+        });
+    });
+</script>
+</body>
+</html>

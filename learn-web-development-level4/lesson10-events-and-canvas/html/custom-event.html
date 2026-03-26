@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>custom-event</title>
+</head>
+<body>
+<button id="myButton">Button</button>
+<div id="moduleA">Module A</div>
+<div id="moduleB">Module B</div>
+<script>
+  const button = document.getElementById('myButton');
+
+  // Listen for the custom event
+  button.addEventListener('myCustomEvent', function(event) {
+    console.log('Custom event received:', event.detail.message);
+  });
+
+  // Create and dispatch it
+  const myEvent = new CustomEvent('myCustomEvent', { detail: { message: 'Hello, world!' } });
+  button.dispatchEvent(myEvent);
+
+  //  Applying Custom Events (Component Communication)
+  const moduleA = document.getElementById('moduleA');
+  const moduleB = document.getElementById('moduleB');
+
+  function notifyModuleB() {
+    const event = new CustomEvent('notifyB', { detail: { message: 'Data from Module A' } });
+    moduleB.dispatchEvent(event);
+  }
+
+  moduleB.addEventListener('notifyB', function(event) {
+    console.log('Module B received:', event.detail.message);
+  });
+
+  notifyModuleB();
+</script>
+</body>
+</html>

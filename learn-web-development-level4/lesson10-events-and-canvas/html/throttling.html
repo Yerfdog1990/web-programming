@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>throttling</title>
+</head>
+<body>
+<div id="scrollContainer" style="height: 200px; overflow-y: scroll;">
+    <div style="height: 1000px;"></div>
+</div>
+<div id="status">Start scrolling to see the effect</div>
+
+<script>
+    const scrollContainer = document.getElementById('scrollContainer');
+    const status = document.getElementById('status');
+
+    function throttle(func, limit) {
+        let lastFunc;
+        let lastRan;
+        return function(...args) {
+            const context = this;
+            if (!lastRan) {
+                func.apply(context, args);
+                lastRan = Date.now();
+            } else {
+                clearTimeout(lastFunc);
+                lastFunc = setTimeout(() => {
+                    if ((Date.now() - lastRan) >= limit) {
+                        func.apply(context, args);
+                        lastRan = Date.now();
+                    }
+                }, limit - (Date.now() - lastRan));
+            }
+        };
+    }
+
+    function handleScroll(event) {
+        status.textContent = 'Scrolling... ' + new Date().toLocaleTimeString();
+    }
+
+    const throttledScroll = throttle(handleScroll, 200);
+    scrollContainer.addEventListener('scroll', throttledScroll);
+</script>
+</body>
+</html>
