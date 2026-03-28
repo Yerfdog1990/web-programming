@@ -8,3 +8,6 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+#Large files
+projects/boutique-frontend/node_modules/@next/swc-darwin-x64/next-swc.darwin-x64.node
