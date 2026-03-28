@@ -23,6 +23,10 @@
 hs_err_pid*
 replay_pid*
 
+# Node modules
+node_modules/
+**/node_modules/
+
 # Large files
 **/*.mp4
 **/*.mp3
