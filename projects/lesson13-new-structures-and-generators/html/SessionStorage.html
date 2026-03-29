@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>sessionStorage Example</title>
+</head>
+<body>
+<h1>sessionStorage Example</h1>
+<label for="sessionData">Session Data:</label>
+<input type="text" id="sessionData" placeholder="Enter some data">
+<button id="saveSessionButton">Save</button>
+<button id="loadSessionButton">Load</button>
+
+<script>
+  const saveSessionButton = document.getElementById('saveSessionButton');
+  const loadSessionButton = document.getElementById('loadSessionButton');
+  const sessionDataInput = document.getElementById('sessionData');
+
+  saveSessionButton.addEventListener('click', function() {
+    const data = sessionDataInput.value;
+    sessionStorage.setItem('data', data);
+    alert('Data saved in session!');
+  });
+
+  loadSessionButton.addEventListener('click', function() {
+    const savedData = sessionStorage.getItem('data');
+
+    if (savedData) {
+      sessionDataInput.value = savedData;
+      alert('Data loaded from session!\n' + savedData);
+    } else {
+      alert('No data found in session.');
+    }
+  });
+</script>
+</body>
+</html>

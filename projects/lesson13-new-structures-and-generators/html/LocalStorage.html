@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>localStorage Example</title>
+</head>
+<body>
+<h1>localStorage Example</h1>
+<label for="username">Username:</label>
+<input type="text" id="username" placeholder="Enter your username">
+<button id="saveButton">Save</button>
+<button id="loadButton">Load</button>
+
+<script>
+    const saveButton = document.getElementById('saveButton');
+    const loadButton = document.getElementById('loadButton');
+    const usernameInput = document.getElementById('username');
+
+    saveButton.addEventListener('click', function() {
+        const username = usernameInput.value;
+        localStorage.setItem('username', username);
+        console.log('Username saved:', username);
+        alert('Username saved!');
+    });
+
+    loadButton.addEventListener('click', function() {
+        const savedUsername = localStorage.getItem('username');
+
+        if (savedUsername) {
+            usernameInput.value = savedUsername;
+            alert('Username loaded!\n' + savedUsername);
+        } else {
+            alert('No username found.');
+        }
+    });
+</script>
+</body>
+</html>
