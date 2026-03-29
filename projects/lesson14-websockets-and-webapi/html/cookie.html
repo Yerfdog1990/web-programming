@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cookie Example</title>
+</head>
+<body>
+
+<button onclick="handleSetCookie()">Set Cookie</button>
+<button onclick="handleGetCookie()">Get Cookie</button>
+<button onclick="handleDeleteCookie()">Delete Cookie</button>
+
+<script>
+    function setCookie(name, value, days) {
+        let expires = "";
+
+        if (days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+
+    function getCookie(name) {
+        const nameEQ = name + "=";
+        const cookies = document.cookie.split(';');
+
+        for (let c of cookies) {
+            c = c.trim();
+            if (c.indexOf(nameEQ) === 0) {
+                return c.substring(nameEQ.length);
+            }
+        }
+
+        return null;
+    }
+
+    function deleteCookie(name) {
+        document.cookie = name + "=; Max-Age=0; path=/";
+    }
+
+    function handleSetCookie() {
+        setCookie("username", "JohnDoe", 7);
+        alert("Cookie saved for 7 days");
+    }
+
+    function handleGetCookie() {
+        const value = getCookie("username");
+        alert(value ? value : "Not found");
+    }
+
+    function handleDeleteCookie() {
+        deleteCookie("username");
+        alert("Cookie deleted");
+    }
+</script>
+
+</body>
+</html>

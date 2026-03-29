@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WebSocket Chat</title>
+</head>
+<body>
+<label for="message">Text box</label>
+<input type="text" id="message" placeholder="Enter your message" />
+<button onclick="sendMessage()">Send</button>
+
+<div id="chat"></div>
+
+<script>
+  const socket = new WebSocket('ws://localhost:8080');
+  const chat = document.getElementById('chat');
+
+  socket.onopen = function() {
+    console.log('WebSocket is open now.');
+  };
+
+  socket.onmessage = function(event) {
+    const message = document.createElement('p');
+    message.textContent = event.data;
+    chat.appendChild(message);
+  };
+
+  socket.onclose = function() {
+    console.log('WebSocket is closed now.');
+  };
+
+  socket.onerror = function(event) {
+    console.error('WebSocket error:', event);
+  };
+
+  function sendMessage() {
+    const input = document.getElementById('message');
+    socket.send(input.value);
+    input.value = '';
+  }
+</script>
+
+</body>
+</html>

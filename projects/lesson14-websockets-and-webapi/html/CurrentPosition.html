@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Geolocation Example</title>
+</head>
+<body>
+<p id="latitude">Latitude: </p>
+<p id="longitude">Longitude: </p>
+<script>
+  const latitude = document.getElementById('latitude');
+  const longitude = document.getElementById('longitude');
+  if ('geolocation' in navigator) {
+    navigator.geolocation.getCurrentPosition(
+            function(position) {
+              latitude.textContent = "Latitude: " + position.coords.latitude.toFixed(2);
+              latitude.setAttribute(
+                      'style',
+                      'color: red; font-size: 20px; font-weight: bold;'
+              )
+
+              console.log("Latitude: " + position.coords.latitude);
+              longitude.textContent = "Longitude: " + position.coords.longitude.toFixed(2);
+              longitude.setAttribute(
+                      'style',
+                      'color: green; font-size: 20px; font-weight: bold;'
+              )
+              console.log("Longitude: " + position.coords.longitude);
+            },
+            function(error) {
+              console.log("User denied the request for location access.");
+            }
+    );
+  } else {
+    console.log("Geolocation API is not supported in this browser.");
+  }
+</script>
+</body>
+</html>
